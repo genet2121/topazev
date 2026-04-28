@@ -22,23 +22,33 @@ export default function WhatMakesTopazEVDifferent() {
   const faqItems: FAQItem[] = [
     {
       id: 1,
-      question: 'How does Topaz help operators scale their networks cost-effectively?'
+      question: 'How does Topaz help operators scale their networks cost-effectively?',
+      answer:
+        'TopazEV uses clear, predictable pricing with no revenue sharing or per-session fees. As you add chargers, the per-station cost can decrease, helping you scale without surprises while keeping 100% of your charging revenue.',
     },
     {
       id: 2,
-      question: 'Can Topaz be customized for unique business needs?'
+      question: 'Can Topaz be customized for unique business needs?',
+      answer:
+        'Yes. TopazEV is built on open standards and open APIs, making it easier to tailor workflows, integrations, branding, and operational rules to your specific business requirements.',
     },
     {
       id: 3,
-      question: 'Is Topaz secure and compliant with industry standards?'
+      question: 'Is Topaz secure and compliant with industry standards?',
+      answer:
+        'TopazEV is designed to support enterprise deployments and modern OCPP versions. Security posture depends on your deployment and configuration, but the platform is built to support best practices like access control, auditability, and secure integrations.',
     },
     {
       id: 4,
-      question: 'What does it mean that Topaz is &quot;Powered by Open-Source Innovation&quot;?'
+      question: 'What does it mean that Topaz is &quot;Powered by Open-Source Innovation&quot;?',
+      answer:
+        'It means the platform is built on open-source foundations (like CitrineOS), so you benefit from transparent development, extensibility, and a broader ecosystem—without vendor lock-in.',
     },
     {
       id: 5,
-      question: 'How is Topaz different from traditional Charge Station Management Systems (CSMS)?'
+      question: 'How is Topaz different from traditional Charge Station Management Systems (CSMS)?',
+      answer:
+        'TopazEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
     }
   ]
 
@@ -108,6 +118,8 @@ export default function WhatMakesTopazEVDifferent() {
                     <button
                       onClick={() => toggleExpand(item.id)}
                       className="w-full flex justify-between items-start gap-4 text-left"
+                      aria-expanded={expandedId === item.id}
+                      aria-controls={`faq-answer-${item.id}`}
                     >
                       <p className="text-base font-bold leading-sm text-[#020202] flex-1">
                         {item.question}
@@ -118,10 +130,18 @@ export default function WhatMakesTopazEVDifferent() {
                         width={16}
                         height={16}
                         className={`w-icon-sm flex-shrink-0 transition-transform ${
-                          expandedId === item.id ? 'rotate-180' : ''
+                          expandedId === item.id ? 'rotate-45' : ''
                         }`}
                       />
                     </button>
+                    {expandedId === item.id && item.answer ? (
+                      <div
+                        id={`faq-answer-${item.id}`}
+                        className="pt-3 text-sm sm:text-[15px] md:text-base leading-relaxed text-[#202024cc] max-w-[680px]"
+                      >
+                        {item.answer}
+                      </div>
+                    ) : null}
                   </div>
                 ))}
               </div>
