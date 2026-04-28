@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[720px] overflow-hidden">
+    <section className="relative w-full -mt-20 min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[720px]">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
           src="/assets/images/Screenshot_from_2026-04-28_09-10-19-1777356660432.png"
           alt="EV charging station at dusk with electric car and glowing canopy"
@@ -18,29 +18,9 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full flex flex-col">
-        {/* Navbar */}
-        <div className="flex items-center justify-center pt-4 sm:pt-5 px-4 sm:px-6 md:px-8 lg:px-14">
-          <div className="flex items-center justify-between w-full max-w-[520px] sm:max-w-[560px] bg-[#00000099] rounded-xl px-4 py-2.5">
-            <div className="flex items-center gap-2.5">
-              <Image
-                src="/images/img_pfad_20486.svg"
-                alt="S44 Logo"
-                width={74}
-                height={20}
-                className="w-[60px] sm:w-[65px] md:w-[70px] lg:w-[74px]"
-              />
-              <div className="w-[1px] h-5 bg-[#ffffff99]" />
-              <span className="text-white font-semibold text-sm sm:text-base tracking-wide">CSMS</span>
-            </div>
-            <button className="bg-[#ffffff] rounded-lg px-4 py-2 text-sm font-bold text-[#020202] hover:bg-[#f5f5f5] transition-colors ml-6">
-              Get in Touch
-            </button>
-          </div>
-        </div>
-
+      <div className="relative z-10 w-full flex flex-col ">
         {/* Hero Content */}
-        <div className="flex flex-col gap-6 sm:gap-7 px-6 sm:px-10 md:px-14 lg:px-20 pt-10 sm:pt-12 md:pt-14 pb-[80px] sm:pb-[100px] md:pb-[120px] lg:pb-[140px] max-w-[600px] lg:max-w-[640px]">
+        <div className="mt-20 mx-auto w-full flex flex-col gap-6 sm:gap-7 px-6 sm:px-10 md:px-14 lg:px-20 pt-10 sm:pt-12 md:pt-14 pb-[80px] sm:pb-[100px] md:pb-[120px] lg:pb-[140px] max-w-[600px] lg:max-w-[1200px]">
           {/* TopazEV Logo */}
           <Image
             src="/images/img_image_hero_logo.png"
