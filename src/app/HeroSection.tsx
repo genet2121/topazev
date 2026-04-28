@@ -1,0 +1,81 @@
+'use client';
+import Image from 'next/image';
+
+export default function HeroSection() {
+  return (
+    <section className="relative w-full min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[720px] overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/assets/images/Screenshot_from_2026-04-28_09-10-19-1777356660432.png"
+          alt="EV charging station at dusk with electric car and glowing canopy"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark gradient overlay — stronger on left, fades to transparent on right */}
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#02131b_0%,#02131bcc_30%,#04374f66_60%,#04374f00_100%)]" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 w-full flex flex-col">
+        {/* Navbar */}
+        <div className="flex items-center justify-center pt-4 sm:pt-5 px-4 sm:px-6 md:px-8 lg:px-14">
+          <div className="flex items-center justify-between w-full max-w-[520px] sm:max-w-[560px] bg-[#00000099] rounded-xl px-4 py-2.5">
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/images/img_pfad_20486.svg"
+                alt="S44 Logo"
+                width={74}
+                height={20}
+                className="w-[60px] sm:w-[65px] md:w-[70px] lg:w-[74px]"
+              />
+              <div className="w-[1px] h-5 bg-[#ffffff99]" />
+              <span className="text-white font-semibold text-sm sm:text-base tracking-wide">CSMS</span>
+            </div>
+            <button className="bg-[#ffffff] rounded-lg px-4 py-2 text-sm font-bold text-[#020202] hover:bg-[#f5f5f5] transition-colors ml-6">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+
+        {/* Hero Content */}
+        <div className="flex flex-col gap-6 sm:gap-7 px-6 sm:px-10 md:px-14 lg:px-20 pt-10 sm:pt-12 md:pt-14 pb-[80px] sm:pb-[100px] md:pb-[120px] lg:pb-[140px] max-w-[600px] lg:max-w-[640px]">
+          {/* TopazEV Logo */}
+          <Image
+            src="/images/img_image_hero_logo.png"
+            alt="TopazEV CSMS Logo"
+            width={278}
+            height={74}
+            className="w-[180px] sm:w-[210px] md:w-[240px] lg:w-[278px]"
+          />
+
+          {/* Headline */}
+          <div className="flex flex-col">
+            <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[58px] font-bold leading-[1.1] text-white">
+              Open-Source EV
+            </h1>
+            <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[58px] font-bold leading-[1.1] text-white">
+              Charging Platform
+            </h1>
+          </div>
+
+          {/* Subtext */}
+          <p className="text-sm sm:text-[15px] md:text-base font-normal leading-relaxed text-white max-w-[480px]">
+            TopazEV is a fully managed Charge Station Management System built on CitrineOS. Launch faster, monitor chargers in real time, and scale with open APIs and support for OCPP 1.6, 2.0.1, and 2.1.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-row gap-3.5">
+            <button className="bg-[#ffffff] border border-[#ffffff] rounded-full px-7 py-3 text-sm font-semibold text-[#000000] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap">
+              Request Demo
+            </button>
+            <button className="border-2 border-[#ffffff] rounded-full px-7 py-3 text-sm font-semibold text-[#ffffff] hover:bg-[#ffffff] hover:text-[#000000] transition-colors whitespace-nowrap">
+              How it works
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
