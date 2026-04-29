@@ -21,10 +21,10 @@ export default function HeroSection() {
       <div className="relative z-10 w-full flex flex-col ">
         {/* Hero Content */}
         <div className="mt-20 mx-auto w-full flex flex-col gap-6 sm:gap-7 px-6 sm:px-10 md:px-14 lg:px-20 pt-10 sm:pt-12 md:pt-14 pb-[80px] sm:pb-[100px] md:pb-[120px] lg:pb-[140px] max-w-[600px] lg:max-w-[1200px]">
-          {/* TopazEV Logo */}
+          {/* AddisEV Logo */}
           <Image
-            src="/images/img_image_hero_logo.png"
-            alt="TopazEV CSMS Logo"
+            src="/images/AddisEV-TP.png"
+            alt="AddisEV CSMS Logo"
             width={278}
             height={74}
             className="w-[180px] sm:w-[210px] md:w-[240px] lg:w-[278px]"
@@ -42,7 +42,7 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="text-sm sm:text-[15px] md:text-base font-normal leading-relaxed text-white max-w-[480px]">
-            TopazEV is a fully managed Charge Station Management System built on CitrineOS. Launch faster, monitor chargers in real time, and scale with open APIs and support for OCPP 1.6, 2.0.1, and 2.1.
+            AddisEV is a fully managed Charge Station Management System built on CitrineOS. Launch faster, monitor chargers in real time, and scale with open APIs and support for OCPP 1.6, 2.0.1, and 2.1.
           </p>
 
           {/* CTA Buttons */}

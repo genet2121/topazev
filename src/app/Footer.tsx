@@ -23,15 +23,15 @@ export default function Footer() {
 
           <div className="flex items-center gap-3.5">
             <p className="text-xs font-normal leading-xs text-[#808080]">
-              powered by
+              powered by AddisEV
             </p>
-            <Image
-              src="/images/img_image_image_5.svg"
+            {/* <Image
+              src="/images/.svg"
               alt="S44 Energy"
               width={200}
               height={26}
               className="w-[160px] sm:w-[180px] md:w-[190px] lg:w-[200px]"
-            />
+            /> */}
           </div>
         </div>
       </div>

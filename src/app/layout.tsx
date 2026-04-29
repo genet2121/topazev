@@ -9,17 +9,17 @@ export const viewport = {
 
 export const metadata = {
   title: {
-    default: 'TopazEV - Open Source EV Charging Platform',
-    template: 'TopazEV - Open Source EV Charging Platform | %s',
+    default: 'AddisEV - Open Source EV Charging Platform',
+    template: 'AddisEV - Open Source EV Charging Platform | %s',
   },
-  description: 'TopazEV is a fully managed, open-source Charge Station Management System built on CitrineOS. Enterprise-grade EV charging infrastructure with OCPP 1.6 and 2.0.1 compatibility for scalable electric vehicle charging solutions.',
+  description: 'AddisEV is a fully managed, open-source Charge Station Management System built on CitrineOS. Enterprise-grade EV charging infrastructure with OCPP 1.6 and 2.0.1 compatibility for scalable electric vehicle charging solutions.',
   keywords: 'EV charging, electric vehicle charging, OCPP, CitrineOS, charge station management, open source EV, CSMS, charging infrastructure, OCPP 2.0.1, charging platform',
   
   openGraph: {
     type: 'website',
     title: {
-      default: 'TopazEV - Open Source EV Charging Platform',
-      template: 'TopazEV - Open Source EV Charging Platform | %s',
+      default: 'AddisEV - Open Source EV Charging Platform',
+      template: 'AddisEV - Open Source EV Charging Platform | %s',
     },
     description: 'Enterprise-grade open-source Charge Station Management System. Deploy scalable EV charging infrastructure with full OCPP support and CitrineOS integration.',
   },

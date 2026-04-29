@@ -44,7 +44,7 @@ export default function DesignedToConnect() {
 
           <div className="flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-27.5 mb-3">
             <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
-              TopazEV is built to extend over time, so you can connect charging with energy, operations, and
+              AddisEV is built to extend over time, so you can connect charging with energy, operations, and
             </p>
             <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
               enterprise systems as your network grows.

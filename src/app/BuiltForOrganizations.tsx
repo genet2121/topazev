@@ -17,7 +17,7 @@ export default function BuiltForOrganizations() {
           <div className="relative z-10 flex flex-col gap-9.5 sm:gap-9.5 md:gap-9.5 lg:gap-9.5 items-start px-5 sm:px-5 md:px-5 lg:px-5 max-w-[1244px] mx-auto">
             <div className="flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-61.5 mt-5">
               <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#ffffff] text-center">
-                TopazEV is built for organizations
+                AddisEV is built for organizations
               </h2>
               <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#ffffff] text-center">
                 deploying and operating EV charging

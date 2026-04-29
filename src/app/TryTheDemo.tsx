@@ -29,7 +29,7 @@ export default function TryTheDemo() {
         <div className="flex flex-col gap-14 sm:gap-14 md:gap-14 lg:gap-14">
           <div className="flex flex-col gap-9 items-center px-4 sm:px-8 md:px-12 lg:px-56 pt-13">
             <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
-              Try the TopazEV demo
+              Try the AddisEV demo
             </h2>
 
             <p className="text-lg font-normal leading-lg text-[#020202] text-center">

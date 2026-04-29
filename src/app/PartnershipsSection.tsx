@@ -13,7 +13,7 @@ export default function PartnershipsSection() {
     },
     {
       id: 2,
-      title: 'Visit TopazEV on GitHub',
+      title: 'Visit AddisEV on GitHub',
       logos: [
         { src: '/images/img_image_topaz_ev_logo.png', width: 246, height: 66 },
         { src: '/images/img_image_github_logo.png', width: 60, height: 66 }

@@ -8,11 +8,11 @@ interface FAQItem {
   answer?: string;
 }
 
-export default function WhatMakesTopazEVDifferent() {
+export default function WhatMakesAddisEVDifferent() {
   const [expandedId, setExpandedId] = useState<number | null>(null)
 
   const tabs = [
-    { id: 1, label: 'What Makes Topaz Unique?', active: true },
+    { id: 1, label: 'What Makes AddisEV Unique?', active: true },
     { id: 2, label: 'How does OaaS work?', active: false },
     { id: 3, label: 'How is it implemented?', active: false },
     { id: 4, label: ['What types of plans/pricing', 'tiers do you offer?'], active: false },
@@ -22,33 +22,33 @@ export default function WhatMakesTopazEVDifferent() {
   const faqItems: FAQItem[] = [
     {
       id: 1,
-      question: 'How does Topaz help operators scale their networks cost-effectively?',
+      question: 'How does AddisEV help operators scale their networks cost-effectively?',
       answer:
-        'TopazEV uses clear, predictable pricing with no revenue sharing or per-session fees. As you add chargers, the per-station cost can decrease, helping you scale without surprises while keeping 100% of your charging revenue.',
+        'AddisEV uses clear, predictable pricing with no revenue sharing or per-session fees. As you add chargers, the per-station cost can decrease, helping you scale without surprises while keeping 100% of your charging revenue.',
     },
     {
       id: 2,
-      question: 'Can Topaz be customized for unique business needs?',
+      question: 'Can AddisEV be customized for unique business needs?',
       answer:
-        'Yes. TopazEV is built on open standards and open APIs, making it easier to tailor workflows, integrations, branding, and operational rules to your specific business requirements.',
+        'Yes. AddisEV is built on open standards and open APIs, making it easier to tailor workflows, integrations, branding, and operational rules to your specific business requirements.',
     },
     {
       id: 3,
-      question: 'Is Topaz secure and compliant with industry standards?',
+      question: 'Is AddisEV secure and compliant with industry standards?',
       answer:
-        'TopazEV is designed to support enterprise deployments and modern OCPP versions. Security posture depends on your deployment and configuration, but the platform is built to support best practices like access control, auditability, and secure integrations.',
+        'AddisEV is designed to support enterprise deployments and modern OCPP versions. Security posture depends on your deployment and configuration, but the platform is built to support best practices like access control, auditability, and secure integrations.',
     },
     {
       id: 4,
-      question: 'What does it mean that Topaz is "Powered by Open-Source Innovation"?',
+      question: 'What does it mean that AddisEV is "Powered by Open-Source Innovation"?',
       answer:
         'It means the platform is built on open-source foundations (like CitrineOS), so you benefit from transparent development, extensibility, and a broader ecosystem—without vendor lock-in.',
     },
     {
       id: 5,
-      question: 'How is Topaz different from traditional Charge Station Management Systems (CSMS)?',
+      question: 'How is AddisEV different from traditional Charge Station Management Systems (CSMS)?',
       answer:
-        'TopazEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
+        'AddisEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
     }
   ]
 
@@ -62,12 +62,12 @@ export default function WhatMakesTopazEVDifferent() {
         <div className="flex flex-col gap-[70px] sm:gap-[75px] md:gap-[80px] lg:gap-21.5">
           <div className="flex flex-col gap-9 items-center px-4 sm:px-8 md:px-12 lg:px-56">
             <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
-              What Makes TopazEV Different?
+              What Makes AddisEV Different?
             </h2>
 
             <div className="flex flex-col items-center">
               <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
-                Scale your EV charging infrastructure without unpredictable costs. TopazEV offers
+                Scale your EV charging infrastructure without unpredictable costs. AddisEV offers
               </p>
               <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
                 clear, flexible pricing without revenue sharing or per-session charges. As your

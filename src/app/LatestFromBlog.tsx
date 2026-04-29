@@ -11,7 +11,7 @@ export default function LatestFromBlog() {
       title: ['EV Charging Needs Open', 'Source'],
       description: [
         'Open-source EV charging software like CitrineOS and',
-        'TopazEV gives operators flexibility, interoperability, and',
+        'AddisEV gives operators flexibility, interoperability, and',
         'control that closed SaaS platforms cannot match.'
       ]
     },
@@ -20,9 +20,9 @@ export default function LatestFromBlog() {
       image: '/images/img_image_global_a_168x344.png',
       category: 'Press',
       readTime: 'min read',
-      title: ['S44 Energy Launches', 'TopazEV to Democratize', 'Access to EV Charging', 'Software'],
+      title: ['S44 Energy Launches', 'AddisEV to Democratize', 'Access to EV Charging', 'Software'],
       description: [
-        'Press release: TopazEV is the industry&apos;s first OaaS',
+        'Press release: AddisEV is the industry&apos;s first OaaS',
         'CSMS. Supports OCPP 1.6, 2.0.1, OCPI, and ISO 15118.',
         'Eliminates vendor lock-in and per-session fees.'
       ]

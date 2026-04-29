@@ -1,7 +1,7 @@
 'use client';
 import Image from'next/image';
 
-export default function WhatIsTopazEV() {
+export default function WhatIsAddisEV() {
   const features = [
     {
       id: 1,
@@ -35,12 +35,12 @@ export default function WhatIsTopazEV() {
         <div className="flex flex-col gap-0.5 items-center">
           <div className="flex flex-col gap-6.5 items-center mb-[70px] sm:mb-[75px] md:mb-[80px] lg:mb-21">
             <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
-              What is TopazEV?
+              What is AddisEV?
             </h2>
 
             <div className="flex flex-col items-center px-1 sm:px-2">
               <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
-                TopazEV is an API-first EV charging platform that gives you full control without SaaS lock-in. It handles the complex layers of open
+                AddisEV is an API-first EV charging platform that gives you full control without SaaS lock-in. It handles the complex layers of open
               </p>
               <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
                 protocols (OCPP/OCPI/ISO15118), device connectivity, and infrastructure orchestration so you can build or deploy faster while owning your
