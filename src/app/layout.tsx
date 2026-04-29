@@ -8,6 +8,11 @@ export const viewport = {
 };
 
 export const metadata = {
+  icons: {
+    icon: '/images/AddisEV-LOGO-TP.png',
+    shortcut: '/images/AddisEV-LOGO-TP.png',
+    apple: '/images/AddisEV-LOGO-TP.png',
+  },
   title: {
     default: 'AddisEV - Open Source EV Charging Platform',
     template: 'AddisEV - Open Source EV Charging Platform | %s',
