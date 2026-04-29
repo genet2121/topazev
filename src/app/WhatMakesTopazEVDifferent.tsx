@@ -40,7 +40,7 @@ export default function WhatMakesTopazEVDifferent() {
     },
     {
       id: 4,
-      question: 'What does it mean that Topaz is &quot;Powered by Open-Source Innovation&quot;?',
+      question: 'What does it mean that Topaz is "Powered by Open-Source Innovation"?',
       answer:
         'It means the platform is built on open-source foundations (like CitrineOS), so you benefit from transparent development, extensibility, and a broader ecosystem—without vendor lock-in.',
     },
