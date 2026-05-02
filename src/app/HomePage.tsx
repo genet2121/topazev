@@ -10,7 +10,7 @@ import { useState } from 'react';
 import WhatMakesTopazEVDifferent from './WhatMakesTopazEVDifferent';
  import UniversalCompatibility from'./UniversalCompatibility';
  import LatestFromBlog from'./LatestFromBlog';
- import PartnershipsSection from'./PartnershipsSection';
+ import PricingSection from './PricingSection';
  import CTASection from'./CTASection';
  import Footer from'./Footer';
 
@@ -35,7 +35,7 @@ export default function HomePage() {
         <WhatMakesTopazEVDifferent />
         <UniversalCompatibility />
         <LatestFromBlog />
-        <PartnershipsSection />
+        <PricingSection />
         <CTASection />
         <Footer />
       </main>

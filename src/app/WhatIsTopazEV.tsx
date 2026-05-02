@@ -9,20 +9,20 @@ export default function WhatIsAddisEV() {
       title: 'Production-ready CSMS',
       description: ['Vertically & horizontally', 'scalable; Built on CitrineOS.']
     },
+    // {
+    //   id: 2,
+    //   icon: '/images/img_image_64x64.png',
+    //   title: 'Open-as-a-Service',
+    //   description: ['Open-source flexibility with', 'fully managed delivery.']
+    // },
     {
       id: 2,
-      icon: '/images/img_image_64x64.png',
-      title: 'Open-as-a-Service',
-      description: ['Open-source flexibility with', 'fully managed delivery.']
-    },
-    {
-      id: 3,
       icon: '/images/img_image_1.png',
       title: 'Broad Compatibility',
       description: ['Compatible with OCPP 1.6,', '2.0.1, and 2.1 chargers.']
     },
     {
-      id: 4,
+      id: 3,
       icon: '/images/img_image_2.png',
       title: 'Operational support',
       description: ['Hosting, monitoring, and', 'platform operations', 'handled for you.']
@@ -51,7 +51,7 @@ export default function WhatIsAddisEV() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-4 sm:px-4 md:px-4 lg:px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full px-4 sm:px-4 md:px-4 lg:px-4">
             {features.map((feature) => (
               <div
                 key={feature.id}

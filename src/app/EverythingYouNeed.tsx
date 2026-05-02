@@ -21,14 +21,14 @@ export default function EverythingYouNeed() {
       title: ['Open APIs for', 'Integration'],
       description: ['Connect with energy', 'systems, enterprise', 'tools, and custom', 'workflows']
     },
+    // {
+    //   id: 4,
+    //   icon: '/images/img_div_feature_it_white_a700_168x168.png',
+    //   title: ['Native Cloud', 'Deployment'],
+    //   description: ['No deployment,', 'hosting, or', 'maintenance', 'required']
+    // },
     {
       id: 4,
-      icon: '/images/img_div_feature_it_white_a700_168x168.png',
-      title: ['Native Cloud', 'Deployment'],
-      description: ['No deployment,', 'hosting, or', 'maintenance', 'required']
-    },
-    {
-      id: 5,
       icon: '/images/img_div_feature_it_1.png',
       title: ['Faster', 'Deployment'],
       description: ['Move from pilot to', 'production with', 'confidence']
@@ -48,7 +48,7 @@ export default function EverythingYouNeed() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
             {features.map((feature) => (
               <div key={feature.id} className="flex flex-col items-center">
                 <div className="flex flex-col items-center gap-0">

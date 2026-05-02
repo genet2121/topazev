@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
- import Image from'next/image';
+import Image from 'next/image';
 
 interface FAQItem {
   id: number;
@@ -9,17 +9,15 @@ interface FAQItem {
 }
 
 export default function WhatMakesAddisEVDifferent() {
+  const [activeTabId, setActiveTabId] = useState(1)
   const [expandedId, setExpandedId] = useState<number | null>(null)
 
   const tabs = [
-    { id: 1, label: 'What Makes AddisEV Unique?', active: true },
-    { id: 2, label: 'How does OaaS work?', active: false },
-    { id: 3, label: 'How is it implemented?', active: false },
-    { id: 4, label: ['What types of plans/pricing', 'tiers do you offer?'], active: false },
-    { id: 5, label: ['What is included vs. requires', 'custom build?'], active: false }
+    { id: 1, label: 'What Makes AddisEV Unique?' },
+    { id: 2, label: 'How is it implemented?' },
   ]
 
-  const faqItems: FAQItem[] = [
+  const faqItemsUnique: FAQItem[] = [
     {
       id: 1,
       question: 'How does AddisEV help operators scale their networks cost-effectively?',
@@ -49,8 +47,36 @@ export default function WhatMakesAddisEVDifferent() {
       question: 'How is AddisEV different from traditional Charge Station Management Systems (CSMS)?',
       answer:
         'AddisEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
-    }
+    },
   ]
+
+  const faqItemsImplementation: FAQItem[] = [
+    {
+      id: 6,
+      question: 'Can AddisEV support both new and existing EV networks?',
+      answer:
+        'Yes. You can onboard greenfield sites and connect existing chargers into the same AddisEV tenant. OCPP-based stations can typically be pointed at AddisEV without replacing hardware, while new rollouts use the same CSMS, reporting, and operational workflows.',
+    },
+    {
+      id: 7,
+      question: 'What technologies does AddisEV support for integration?',
+      answer:
+        'AddisEV supports OCPP 1.6, 2.0.1, and 2.1 for charger communication, plus REST-style APIs and webhooks for billing, CRM, identity, and custom dashboards. Because it builds on CitrineOS and open standards, you can integrate with common cloud stacks and your own services.',
+    },
+    {
+      id: 8,
+      question: 'How easy is it to integrate AddisEV with my existing infrastructure?',
+      answer:
+        'Most teams start with OCPP reconfiguration and API keys, then layer integrations over time. If you already operate a CSMS or back office, AddisEV can often run alongside or replace it incrementally—your team defines the pace, and we can help scope a minimal integration path.',
+    },
+  ]
+
+  const faqItems = activeTabId === 1 ? faqItemsUnique : faqItemsImplementation
+
+  const selectTab = (id: number): void => {
+    setActiveTabId(id)
+    setExpandedId(null)
+  }
 
   const toggleExpand = (id: number): void => {
     setExpandedId(expandedId === id ? null : id)
@@ -88,24 +114,28 @@ export default function WhatMakesAddisEVDifferent() {
                   {Array.isArray(tab.label) ? (
                     <div className="flex flex-col">
                       {tab.label.map((line, index) => (
-                        <p
+                        <button
+                          type="button"
                           key={index}
-                          className={`text-lg font-bold leading-lg ${
-                            tab.active ? 'text-[#00b4f5]' : 'text-[#20202466]'
+                          onClick={() => selectTab(tab.id)}
+                          className={`text-left text-lg font-bold leading-lg ${
+                            activeTabId === tab.id ? 'text-[#00b4f5]' : 'text-[#20202466]'
                           } cursor-pointer hover:text-[#00b4f5] transition-colors`}
                         >
                           {line}
-                        </p>
+                        </button>
                       ))}
                     </div>
                   ) : (
-                    <p
-                      className={`text-lg font-bold leading-lg ${
-                        tab.active ? 'text-[#00b4f5]' : 'text-[#20202466]'
+                    <button
+                      type="button"
+                      onClick={() => selectTab(tab.id)}
+                      className={`text-left w-full text-lg font-bold leading-lg ${
+                        activeTabId === tab.id ? 'text-[#00b4f5]' : 'text-[#20202466]'
                       } cursor-pointer hover:text-[#00b4f5] transition-colors`}
                     >
                       {tab.label}
-                    </p>
+                    </button>
                   )}
                 </div>
               ))}

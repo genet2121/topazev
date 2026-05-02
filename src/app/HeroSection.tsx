@@ -21,19 +21,24 @@ export default function HeroSection() {
       <div className="relative z-10 w-full flex flex-col ">
         {/* Hero Content */}
         <div className="mt-20 mx-auto w-full flex flex-col gap-6 sm:gap-7 px-6 sm:px-10 md:px-14 lg:px-20 pt-10 sm:pt-12 md:pt-14 pb-[80px] sm:pb-[100px] md:pb-[120px] lg:pb-[140px] max-w-[600px] lg:max-w-[1200px]">
-          {/* AddisEV Logo */}
-          <Image
-            src="/images/AddisEV-TP.png"
-            alt="AddisEV CSMS Logo"
-            width={278}
-            height={74}
-            className="w-[180px] sm:w-[210px] md:w-[240px] lg:w-[278px]"
-          />
+          <div className="flex flex-row items-center gap-3">
+            {/* AddisEV Logo */}
+            <Image
+              src="/images/AddisEV-LOGO-TP.png"
+              alt="AddisEV CSMS Logo"
+              width={64}
+              height={100}
+              className="h-auto w-14 shrink-0 sm:w-16"
+            />
+            <p className="text-white text-5xl font-bold uppercase">
+              Addis<span className="text-primary-accent">EV</span>
+            </p>
+          </div>
 
           {/* Headline */}
           <div className="flex flex-col">
             <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[58px] font-bold leading-[1.1] text-white">
-              Open-Source EV
+             Electric Vehicle
             </h1>
             <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[58px] font-bold leading-[1.1] text-white">
               Charging Platform

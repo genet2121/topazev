@@ -3,26 +3,26 @@ import Image from'next/image';
 
 export default function DesignedToConnect() {
   const integrations = [
+    // {
+    //   id: 1,
+    //   icon: '/images/img_image_image_4.png',
+    //   title: 'Solar energy systems',
+    //   description: ['Connect charging to', 'distributed energy', 'assets.']
+    // },
     {
       id: 1,
-      icon: '/images/img_image_image_4.png',
-      title: 'Solar energy systems',
-      description: ['Connect charging to', 'distributed energy', 'assets.']
-    },
-    {
-      id: 2,
       icon: '/images/img_image_78x78.png',
       title: 'Battery storage',
       description: ['Support smarter site energy', 'coordination.']
     },
     {
-      id: 3,
+      id: 2,
       icon: '/images/img_image_3.png',
       title: ['Energy management', 'platforms'],
       description: ['Integrate charging into', 'broader power strategies.']
     },
     {
-      id: 4,
+      id: 3,
       icon: '/images/img_image_4.png',
       title: 'Enterprise systems',
       description: ['Connect with business', 'operations and reporting', 'workflows.']
@@ -51,7 +51,7 @@ export default function DesignedToConnect() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mb-7.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full mb-7.5">
             {integrations.map((integration) => (
               <div
                 key={integration.id}

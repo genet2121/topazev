@@ -96,7 +96,7 @@ export default function TryTheDemo() {
 
             <div className="w-full lg:w-[56%] flex justify-center">
               <Image
-                src="/images/img_image_image_3.png"
+                src="/images/dashboard.jpg"
                 alt="Demo Dashboard"
                 width={726}
                 height={764}
