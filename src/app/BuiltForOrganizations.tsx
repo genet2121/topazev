@@ -28,8 +28,8 @@ export default function BuiltForOrganizations() {
             </div>
 
             <Image
-              src="/images/img_div_div_block_15.svg"
-              alt="Organization Types"
+              src="/assets/images/image-1777833443236.png"
+              alt="AddisEV Ecosystem Diagram"
               width={600}
               height={350}
               className="w-full max-w-[450px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[600px] mx-auto"
