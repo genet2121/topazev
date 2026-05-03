@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="w-full max-w-[864px] mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0">
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-4 md:gap-6 lg:gap-8">
-            <a href="mailto:sales@topazev.com" className="text-md font-normal leading-base text-[#808080] hover:text-[#ffffff] transition-colors">
-              sales@topazev.com
+            <a href="mailto:sales@addisev.com" className="text-md font-normal leading-base text-[#808080] hover:text-[#ffffff] transition-colors">
+              sales@addisev.com
             </a>
             
             <Link href="/privacy" className="text-md font-normal leading-base text-[#808080] hover:text-[#ffffff] transition-colors">
