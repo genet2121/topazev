@@ -9,15 +9,9 @@ interface FAQItem {
 }
 
 export default function WhatMakesAddisEVDifferent() {
-  const [activeTabId, setActiveTabId] = useState(1)
-  const [expandedId, setExpandedId] = useState<number | null>(null)
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const tabs = [
-    { id: 1, label: 'What Makes AddisEV Unique?' },
-    { id: 2, label: 'How is it implemented?' },
-  ]
-
-  const faqItemsUnique: FAQItem[] = [
+  const faqItems: FAQItem[] = [
     {
       id: 1,
       question: 'How does AddisEV help operators scale their networks cost-effectively?',
@@ -48,9 +42,6 @@ export default function WhatMakesAddisEVDifferent() {
       answer:
         'AddisEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
     },
-  ]
-
-  const faqItemsImplementation: FAQItem[] = [
     {
       id: 6,
       question: 'Can AddisEV support both new and existing EV networks?',
@@ -69,116 +60,85 @@ export default function WhatMakesAddisEVDifferent() {
       answer:
         'Most teams start with OCPP reconfiguration and API keys, then layer integrations over time. If you already operate a CSMS or back office, AddisEV can often run alongside or replace it incrementally—your team defines the pace, and we can help scope a minimal integration path.',
     },
-  ]
-
-  const faqItems = activeTabId === 1 ? faqItemsUnique : faqItemsImplementation
-
-  const selectTab = (id: number): void => {
-    setActiveTabId(id)
-    setExpandedId(null)
-  }
+  ];
 
   const toggleExpand = (id: number): void => {
-    setExpandedId(expandedId === id ? null : id)
-  }
+    setExpandedId((current) => (current === id ? null : id));
+  };
 
   return (
-    <section className="w-full bg-[#ffffff] py-16 sm:py-18 md:py-20 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-38 mt-[100px] sm:mt-[110px] md:mt-[120px] lg:mt-32.5">
-      <div className="w-full max-w-[1120px] mx-auto">
+    <section className="mt-[100px] w-full bg-[#ffffff] px-4 py-16 sm:mt-[110px] sm:py-18 md:mt-[120px] md:py-20 lg:mt-32.5 lg:py-20 sm:px-6 md:px-8 lg:px-38">
+      <div className="mx-auto w-full max-w-[1120px]">
         <div className="flex flex-col gap-[70px] sm:gap-[75px] md:gap-[80px] lg:gap-21.5">
-          <div className="flex flex-col gap-9 items-center px-4 sm:px-8 md:px-12 lg:px-56">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
+          <div className="flex flex-col items-center gap-9 px-4 sm:px-8 md:px-12 lg:px-56">
+            <h2 className="text-center text-[28px] font-bold leading-[36px] text-[#020202] sm:text-[32px] sm:leading-[40px] md:text-[36px] md:leading-[44px] lg:text-4xl lg:leading-4xl">
               What Makes AddisEV Different?
             </h2>
 
             <div className="flex flex-col items-center">
-              <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
+              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
                 Scale your EV charging infrastructure without unpredictable costs. AddisEV offers
               </p>
-              <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
+              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
                 clear, flexible pricing without revenue sharing or per-session charges. As your
               </p>
-              <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
+              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
                 network expands, benefit from decreasing per-station costs, keeping 100% of your
               </p>
-              <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
+              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
                 charging revenue.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
-            <div className="w-full lg:w-[28%] flex flex-col gap-6.5 pl-7">
-              {tabs.map((tab) => (
-                <div key={tab.id}>
-                  {Array.isArray(tab.label) ? (
-                    <div className="flex flex-col">
-                      {tab.label.map((line, index) => (
-                        <button
-                          type="button"
-                          key={index}
-                          onClick={() => selectTab(tab.id)}
-                          className={`text-left text-lg font-bold leading-lg ${
-                            activeTabId === tab.id ? 'text-[#00b4f5]' : 'text-[#20202466]'
-                          } cursor-pointer hover:text-[#00b4f5] transition-colors`}
-                        >
-                          {line}
-                        </button>
-                      ))}
-                    </div>
-                  ) : (
+          <div className="w-full rounded-lg bg-[#ffffff] px-6 py-8 shadow-[0px_0px_60px_#00000019] sm:px-10 md:px-12 lg:px-14 lg:py-10">
+            <div className="mx-auto flex max-w-[880px] flex-col gap-6.5">
+              {faqItems.map((item) => {
+                const isOpen = expandedId === item.id;
+                return (
+                  <div
+                    key={item.id}
+                    className="border-b border-[#f0f0f0] pb-6.5 last:border-0 last:pb-0"
+                  >
                     <button
                       type="button"
-                      onClick={() => selectTab(tab.id)}
-                      className={`text-left w-full text-lg font-bold leading-lg ${
-                        activeTabId === tab.id ? 'text-[#00b4f5]' : 'text-[#20202466]'
-                      } cursor-pointer hover:text-[#00b4f5] transition-colors`}
-                    >
-                      {tab.label}
-                    </button>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            <div className="w-full lg:flex-1 bg-[#ffffff] rounded-lg shadow-[0px_0px_60px_#00000019] px-8 sm:px-10 md:px-12 lg:px-14 py-8 sm:py-9 md:py-10 lg:py-10">
-              <div className="flex flex-col gap-6.5">
-                {faqItems.map((item) => (
-                  <div key={item.id} className="border-b border-[#f0f0f0] last:border-0 pb-6.5 last:pb-0">
-                    <button
                       onClick={() => toggleExpand(item.id)}
-                      className="w-full flex justify-between items-start gap-4 text-left"
-                      aria-expanded={expandedId === item.id}
+                      className="flex w-full items-start justify-between gap-4 text-left"
+                      aria-expanded={isOpen}
                       aria-controls={`faq-answer-${item.id}`}
+                      id={`faq-question-${item.id}`}
                     >
-                      <p className="text-base font-bold leading-sm text-[#020202] flex-1">
+                      <span className="flex-1 text-base font-bold leading-sm text-[#020202]">
                         {item.question}
-                      </p>
+                      </span>
                       <Image
                         src="/images/img_image_faq_arrow.svg"
-                        alt="Toggle"
+                        alt=""
                         width={16}
                         height={16}
-                        className={`w-icon-sm flex-shrink-0 transition-transform ${
-                          expandedId === item.id ? 'rotate-45' : ''
+                        className={`mt-1 w-icon-sm shrink-0 transition-transform duration-200 ${
+                          isOpen ? 'rotate-45' : ''
                         }`}
+                        aria-hidden
                       />
                     </button>
-                    {expandedId === item.id && item.answer ? (
+                    {isOpen && item.answer ? (
                       <div
                         id={`faq-answer-${item.id}`}
-                        className="pt-3 text-sm sm:text-[15px] md:text-base leading-relaxed text-[#202024cc] max-w-[680px]"
+                        role="region"
+                        aria-labelledby={`faq-question-${item.id}`}
+                        className="pt-3 text-sm leading-relaxed text-[#202024cc] sm:text-[15px] md:text-base"
                       >
                         {item.answer}
                       </div>
                     ) : null}
                   </div>
-                ))}
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
