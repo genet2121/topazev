@@ -67,38 +67,38 @@ export default function WhatMakesAddisEVDifferent() {
   };
 
   return (
-    <section className="mt-[100px] w-full bg-[#ffffff] px-4 py-16 sm:mt-[110px] sm:py-18 md:mt-[120px] md:py-20 lg:mt-32.5 lg:py-20 sm:px-6 md:px-8 lg:px-38">
+    <section className="mt-[100px] w-full bg-background-main px-4 py-16 sm:mt-[110px] sm:py-18 md:mt-[120px] md:py-20 lg:mt-32.5 lg:py-20 sm:px-6 md:px-8 lg:px-38">
       <div className="mx-auto w-full max-w-[1120px]">
         <div className="flex flex-col gap-[70px] sm:gap-[75px] md:gap-[80px] lg:gap-21.5">
           <div className="flex flex-col items-center gap-9 px-4 sm:px-8 md:px-12 lg:px-56">
-            <h2 className="text-center text-[28px] font-bold leading-[36px] text-[#020202] sm:text-[32px] sm:leading-[40px] md:text-[36px] md:leading-[44px] lg:text-4xl lg:leading-4xl">
+            <h2 className="text-center text-[28px] font-bold leading-[36px] text-text-primary sm:text-[32px] sm:leading-[40px] md:text-[36px] md:leading-[44px] lg:text-4xl lg:leading-4xl">
               What Makes AddisEV Different?
             </h2>
 
             <div className="flex flex-col items-center">
-              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
+              <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
                 Scale your EV charging infrastructure without unpredictable costs. AddisEV offers
               </p>
-              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
+              <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
                 clear, flexible pricing without revenue sharing or per-session charges. As your
               </p>
-              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
+              <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
                 network expands, benefit from decreasing per-station costs, keeping 100% of your
               </p>
-              <p className="text-center text-sm font-normal leading-md text-[#020202] sm:text-[15px] md:text-md">
+              <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
                 charging revenue.
               </p>
             </div>
           </div>
 
-          <div className="w-full rounded-lg bg-[#ffffff] px-6 py-8 shadow-[0px_0px_60px_#00000019] sm:px-10 md:px-12 lg:px-14 lg:py-10">
+          <div className="w-full rounded-lg bg-background-main px-6 py-8 shadow-[0px_0px_60px_color-mix(in_srgb,var(--primary-background)_12%,transparent)] sm:px-10 md:px-12 lg:px-14 lg:py-10">
             <div className="mx-auto flex max-w-[880px] flex-col gap-6.5">
               {faqItems.map((item) => {
                 const isOpen = expandedId === item.id;
                 return (
                   <div
                     key={item.id}
-                    className="border-b border-[#f0f0f0] pb-6.5 last:border-0 last:pb-0"
+                    className="border-b border-border-muted pb-6.5 last:border-0 last:pb-0"
                   >
                     <button
                       type="button"
@@ -108,7 +108,7 @@ export default function WhatMakesAddisEVDifferent() {
                       aria-controls={`faq-answer-${item.id}`}
                       id={`faq-question-${item.id}`}
                     >
-                      <span className="flex-1 text-base font-bold leading-sm text-[#020202]">
+                      <span className="flex-1 text-base font-bold leading-sm text-text-primary">
                         {item.question}
                       </span>
                       <Image
@@ -127,7 +127,7 @@ export default function WhatMakesAddisEVDifferent() {
                         id={`faq-answer-${item.id}`}
                         role="region"
                         aria-labelledby={`faq-question-${item.id}`}
-                        className="pt-3 text-sm leading-relaxed text-[#202024cc] sm:text-[15px] md:text-base"
+                        className="pt-3 text-sm leading-relaxed text-text-translucent sm:text-[15px] md:text-base"
                       >
                         {item.answer}
                       </div>

@@ -4,25 +4,25 @@ import Image from'next/image';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#121212] py-6.5 px-6.5 mt-[210px] sm:mt-[240px] md:mt-[250px] lg:mt-66.5">
+    <footer className="mt-[210px] w-full bg-footer-bg py-6.5 px-6.5 sm:mt-[240px] md:mt-[250px] lg:mt-66.5">
       <div className="w-full max-w-[864px] mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0">
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-4 md:gap-6 lg:gap-8">
-            <a href="mailto:sales@topazev.com" className="text-md font-normal leading-base text-[#808080] hover:text-[#ffffff] transition-colors">
+            <a href="mailto:sales@topazev.com" className="text-md font-normal leading-base text-text-secondary transition-colors hover:text-text-inverse">
               sales@topazev.com
             </a>
             
-            <Link href="/privacy" className="text-md font-normal leading-base text-[#808080] hover:text-[#ffffff] transition-colors">
+            <Link href="/privacy" className="text-md font-normal leading-base text-text-secondary transition-colors hover:text-text-inverse">
               Privacy
             </Link>
             
-            <Link href="/imprint" className="text-md font-normal leading-base text-[#808080] hover:text-[#ffffff] transition-colors">
+            <Link href="/imprint" className="text-md font-normal leading-base text-text-secondary transition-colors hover:text-text-inverse">
               Imprint
             </Link>
           </div>
 
           <div className="flex items-center gap-3.5">
-            <p className="text-xs font-normal leading-xs text-[#808080]">
+            <p className="text-xs font-normal leading-xs text-text-secondary">
               powered by AddisEV
             </p>
             {/* <Image

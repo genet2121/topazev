@@ -64,17 +64,17 @@ export default function LatestFromBlog() {
   ];
 
   return (
-    <section className="w-full bg-[#020202] py-16 sm:py-18 md:py-20 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-14 mt-15">
+    <section className="mt-15 w-full bg-primary-background py-16 sm:py-18 md:py-20 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-14">
       <div className="mx-auto w-full max-w-[1200px]">
         <div className="mb-34 flex flex-col gap-[100px] sm:gap-[110px] md:gap-[115px] lg:gap-30.5">
           <div className="mt-34 flex flex-col items-center justify-between gap-6 sm:flex-row sm:gap-0">
-            <h2 className="text-center text-[28px] font-bold leading-[36px] text-[#ffffff] sm:text-left sm:text-[32px] sm:leading-[40px] md:text-[36px] md:leading-[44px] lg:text-4xl lg:leading-4xl">
+            <h2 className="text-center text-[28px] font-bold leading-[36px] text-text-inverse sm:text-left sm:text-[32px] sm:leading-[40px] md:text-[36px] md:leading-[44px] lg:text-4xl lg:leading-4xl">
               Latest from the Blog
             </h2>
 
             <button
               type="button"
-              className="rounded-2xl border border-[#ffffff] bg-[#ffffff] px-7.5 py-3.5 text-sm font-semibold leading-sm text-[#000000] transition-colors hover:bg-[#f5f5f5]"
+              className="rounded-2xl border border-background-main bg-background-main px-7.5 py-3.5 text-sm font-semibold leading-sm text-primary-background transition-colors hover:bg-background-card"
             >
               View All
             </button>
@@ -87,14 +87,10 @@ export default function LatestFromBlog() {
                 className="group/card flex cursor-default flex-col gap-7"
               >
                 {post.imageLayout === 'showcase' ? (
-                  <div className="relative overflow-hidden rounded-2xl bg-[linear-gradient(155deg,#0a3d52_0%,#02131b_42%,#062028_100%)] p-6 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.65)] ring-1 ring-white/[0.08] transition-all duration-300 ease-out sm:p-8 group-hover/card:ring-[#00b4f5]/45 group-hover/card:shadow-[0_28px_80px_-12px_rgba(0,180,245,0.22)]">
+                  <div className="addisev-blog-showcase relative overflow-hidden rounded-2xl p-6 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.65)] ring-1 ring-white/[0.08] transition-all duration-300 ease-out sm:p-8 group-hover/card:shadow-[0_28px_80px_-12px_color-mix(in_srgb,var(--primary-accent)_22%,transparent)] group-hover/card:ring-primary-accent/45">
                     <div
-                      className="pointer-events-none absolute inset-0 opacity-90 transition-opacity duration-300 group-hover/card:opacity-100"
+                      className="addisev-blog-showcase-glow pointer-events-none absolute inset-0 opacity-90 transition-opacity duration-300 group-hover/card:opacity-100"
                       aria-hidden
-                      style={{
-                        background:
-                          'radial-gradient(ellipse 85% 55% at 50% 28%, rgba(0,180,245,0.18), transparent 62%)',
-                      }}
                     />
                     <div className="relative flex min-h-[200px] items-center justify-center sm:min-h-[240px]">
                       <Image
@@ -108,7 +104,7 @@ export default function LatestFromBlog() {
                     </div>
                   </div>
                 ) : (
-                  <div className="relative overflow-hidden rounded-xl bg-[#0d0d0d] ring-1 ring-white/[0.06] transition-all duration-300 ease-out group-hover/card:ring-[#00b4f5]/35 group-hover/card:shadow-[0_20px_50px_-12px_rgba(0,180,245,0.12)]">
+                  <div className="relative overflow-hidden rounded-xl bg-secondary-background ring-1 ring-white/[0.06] transition-all duration-300 ease-out group-hover/card:shadow-[0_20px_50px_-12px_color-mix(in_srgb,var(--primary-accent)_14%,transparent)] group-hover/card:ring-primary-accent/35">
                     <div className="aspect-[344/168] w-full">
                       <Image
                         src={post.image}
@@ -124,16 +120,16 @@ export default function LatestFromBlog() {
 
                 <div className="flex flex-col gap-5.5">
                   <div className="flex items-center gap-3">
-                    <p className="text-xs font-normal leading-xs text-[#ffffff]">{post.category}</p>
-                    <div className="h-1 w-1 rounded-xs bg-[#b3b3b3]" />
-                    <p className="text-xs font-normal leading-xs text-[#b3b3b3]">{post.readTime}</p>
+                    <p className="text-xs font-normal leading-xs text-text-inverse">{post.category}</p>
+                    <div className="h-1 w-1 rounded-xs bg-text-muted" />
+                    <p className="text-xs font-normal leading-xs text-text-muted">{post.readTime}</p>
                   </div>
 
                   <div className="flex flex-col">
                     {post.title.map((line, index) => (
                       <h3
                         key={index}
-                        className="text-2xl font-bold leading-2xl text-[#ffffff] transition-colors duration-200 group-hover/card:text-[#e8fbff]"
+                        className="text-2xl font-bold leading-2xl text-text-inverse transition-colors duration-200 group-hover/card:text-[var(--accent-tint-bg)]"
                       >
                         {line}
                       </h3>
@@ -142,7 +138,7 @@ export default function LatestFromBlog() {
 
                   <div className="flex flex-col">
                     {post.description.map((line, index) => (
-                      <p key={index} className="text-xs font-normal leading-xs text-[#ffffff]/85">
+                      <p key={index} className="text-xs font-normal leading-xs text-text-inverse/85">
                         {line}
                       </p>
                     ))}

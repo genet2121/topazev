@@ -20,30 +20,19 @@ export default function MobileAppShowcaseSection() {
   return (
     <section
       id="mobile-app"
-      className="relative mt-[100px] w-full overflow-hidden bg-[#020202] px-4 py-20 sm:mt-[110px] sm:px-6 md:mt-[120px] md:py-24 lg:mt-32 lg:px-14 lg:py-[7rem]"
+      className="relative mt-[100px] w-full overflow-hidden bg-primary-background px-4 py-20 sm:mt-[110px] sm:px-6 md:mt-[120px] md:py-24 lg:mt-32 lg:px-14 lg:py-[7rem]"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.65]"
-        aria-hidden
-        style={{
-          background:
-            'radial-gradient(ellipse 80% 55% at 15% 45%, rgba(0,180,245,0.14), transparent 55%), radial-gradient(ellipse 70% 45% at 85% 65%, rgba(0,180,245,0.08), transparent 50%)',
-        }}
-      />
+      <div className="addisev-mobile-glow-bg pointer-events-none absolute inset-0 opacity-[0.65]" aria-hidden />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" aria-hidden />
 
       <div className="relative mx-auto grid max-w-[1200px] items-center gap-14 lg:grid-cols-2 lg:gap-16 xl:gap-20">
         <div className="relative flex justify-center lg:order-1 lg:justify-start">
           <div className="group relative w-full max-w-[340px] sm:max-w-[380px]">
             <div
-              className="pointer-events-none absolute -inset-6 rounded-[2rem] opacity-70 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
-              // style={{
-              //   background:
-              //     'radial-gradient(circle at 50% 40%, rgba(0,180,245,0.35), transparent 68%)',
-              // }}
+              className="addisev-mobile-glow-orbit pointer-events-none absolute -inset-6 rounded-[2rem] opacity-70 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
               aria-hidden
             />
-            <div className="relative rounded-[1.75rem] p-6 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.85)] transition-[transform,box-shadow] duration-500 ease-out will-change-transform group-hover:-translate-y-1 group-hover:shadow-[0_50px_120px_-16px_rgba(0,180,245,0.18)] sm:p-8">
+            <div className="relative rounded-[1.75rem] p-6 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.85)] transition-[transform,box-shadow] duration-500 ease-out will-change-transform group-hover:-translate-y-1 group-hover:shadow-[0_50px_120px_-16px_color-mix(in_srgb,var(--primary-accent)_24%,transparent)] sm:p-8">
               <Image
                 src="/images/addisev-mobile-app-removebg.png"
                 alt="AddisEV mobile app showing registration screen and map with charging station pins"
@@ -58,13 +47,13 @@ export default function MobileAppShowcaseSection() {
         </div>
 
         <div className="flex flex-col gap-8 lg:order-2 lg:max-w-[560px] lg:pl-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00b4f5]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-accent">
             Mobile app
           </p>
-          <h2 className="text-[28px] font-bold leading-[1.12] text-white sm:text-[34px] md:text-[40px] lg:text-[44px]">
+          <h2 className="text-[28px] font-bold leading-[1.12] text-text-inverse sm:text-[34px] md:text-[40px] lg:text-[44px]">
             Promote your network with the AddisEV driver app
           </h2>
-          <p className="text-base leading-relaxed text-white/75 sm:text-[17px]">
+          <p className="text-base leading-relaxed text-text-inverse/75 sm:text-[17px]">
             Showcase your stations with a modern driver experience—onboarding, discovery, and a
             clear path to starting a charge. Designed to feel premium, fast, and trustworthy.
           </p>
@@ -73,14 +62,14 @@ export default function MobileAppShowcaseSection() {
             {highlights.map((item) => (
               <li key={item.title} className="flex gap-4">
                 <span
-                  className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#00b4f5]/15 text-sm font-bold text-[#00b4f5]"
+                  className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[color-mix(in_srgb,var(--primary-accent)_18%,transparent)] text-sm font-bold text-primary-accent"
                   aria-hidden
                 >
                   ✓
                 </span>
                 <div>
-                  <p className="font-semibold text-white">{item.title}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-white/65 sm:text-[15px]">
+                  <p className="font-semibold text-text-inverse">{item.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-text-inverse/65 sm:text-[15px]">
                     {item.body}
                   </p>
                 </div>
@@ -91,7 +80,7 @@ export default function MobileAppShowcaseSection() {
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <button
               type="button"
-              className="rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-[#020202] transition-colors hover:bg-[#e8fbff]"
+              className="rounded-full bg-background-main px-8 py-3.5 text-sm font-semibold text-text-primary transition-colors hover:bg-[var(--accent-tint-bg)]"
             >
               Get the app
             </button>

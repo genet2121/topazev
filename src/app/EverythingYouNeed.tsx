@@ -36,14 +36,14 @@ export default function EverythingYouNeed() {
   ]
 
   return (
-    <section className="w-full bg-[#ffffff] py-20 sm:py-24 md:py-26 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-14 mt-4.5">
+    <section className="mt-4.5 w-full bg-background-main py-20 sm:py-24 md:py-26 lg:py-28 px-4 sm:px-6 md:px-8 lg:px-14">
       <div className="w-full max-w-[1312px] mx-auto">
         <div className="flex flex-col gap-[90px] sm:gap-[100px] md:gap-[110px] lg:gap-29.5">
           <div className="flex flex-col items-center">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
+            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-primary text-center">
               Everything you need to launch, manage,
             </h2>
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
+            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-primary text-center">
               and scale your EV charging network
             </h2>
           </div>
@@ -60,14 +60,14 @@ export default function EverythingYouNeed() {
                     className="w-card-sm h-card-sm"
                   />
 
-                  <div className="w-[6px] h-[6px] bg-[#000000] rounded-sm mt-3.5" />
-                  <div className="w-[1px] h-[66px] bg-[#000000]" />
+                  <div className="mt-3.5 h-[6px] w-[6px] rounded-sm bg-primary-background" />
+                  <div className="h-[66px] w-[1px] bg-primary-background" />
                 </div>
 
                 <div className="flex flex-col gap-3.5 items-center mt-2.5 py-2.5">
                   <div className="flex flex-col items-center">
                     {feature.title.map((line, index) => (
-                      <h3 key={index} className="text-lg font-bold leading-lg text-[#020202] text-center">
+                      <h3 key={index} className="text-lg font-bold leading-lg text-text-primary text-center">
                         {line}
                       </h3>
                     ))}
@@ -75,7 +75,7 @@ export default function EverythingYouNeed() {
 
                   <div className="flex flex-col items-center">
                     {feature.description.map((line, index) => (
-                      <p key={index} className="text-xs font-normal leading-xs text-[#020202] text-center">
+                      <p key={index} className="text-xs font-normal leading-xs text-text-primary text-center">
                         {line}
                       </p>
                     ))}

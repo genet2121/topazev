@@ -48,6 +48,7 @@ module.exports = {
           primary: "var(--border-primary)",
           secondary: "var(--border-secondary)",
           light: "var(--border-light)",
+          muted: "var(--border-muted)",
         },
         // Component-specific colors - Button
         button: {
