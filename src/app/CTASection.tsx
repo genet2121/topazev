@@ -11,33 +11,33 @@ export default function CTASection() {
         backgroundPosition: 'center'
       }}
     >
-      <div className="w-full max-w-[1080px] mx-auto px-7.5 py-8.5">
+      <div className="w-full max-w-[900px] mx-auto px-7.5 py-8.5">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-8 mt-5">
           <div className="flex flex-col gap-7.5 w-full sm:w-[90%] px-5 sm:px-5 md:px-5 lg:px-5">
             <div className="flex flex-col">
-              <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#ffffff]">
+              <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-inverse">
                 Open EV charging software, fully
               </h2>
-              <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#ffffff] ml-2">
+              <h2 className="ml-2 text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-inverse">
                 managed for scale
               </h2>
             </div>
 
             <div className="flex flex-col">
-              <p className="text-md font-normal leading-md text-[#ffffff]">
+              <p className="text-md font-normal leading-md text-text-inverse">
                 Launch faster, scale confidently, and keep control of your charging
               </p>
-              <p className="text-md font-normal leading-md text-[#ffffff]">
+              <p className="text-md font-normal leading-md text-text-inverse">
                 network.
               </p>
             </div>
 
-            <button className="bg-[#ffffff] border border-[#ffffff] rounded-2xl px-7.5 py-3.5 text-sm font-semibold leading-sm text-[#000000] hover:bg-[#f5f5f5] transition-colors w-fit">
+            <button className="w-fit rounded-2xl border border-background-main bg-background-main px-7.5 py-3.5 text-sm font-semibold leading-sm text-primary-background transition-colors hover:bg-background-card">
               Get Demo Access
             </button>
           </div>
 
-          <button className="flex-shrink-0 border-thick border-[#ffffff] rounded-full p-5.5">
+          <button className="flex-shrink-0 rounded-full border-thick border-background-main p-5.5">
             <Image
               src="/images/img_div_footer_cta_button.svg"
               alt="CTA Button"

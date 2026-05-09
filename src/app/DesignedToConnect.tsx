@@ -30,23 +30,23 @@ export default function DesignedToConnect() {
   ]
 
   return (
-    <section className="w-full bg-[#f5f5ff] py-16 sm:py-18 md:py-20 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-14">
+    <section className="w-full bg-background-card py-16 sm:py-18 md:py-20 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-14">
       <div className="w-full max-w-[1120px] mx-auto">
         <div className="flex flex-col gap-6.5 items-center">
           <div className="flex flex-col items-center">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
+            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-primary text-center">
               Designed to connect with the systems around your
             </h2>
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-[#020202] text-center">
+            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-primary text-center">
               charging network.
             </h2>
           </div>
 
           <div className="flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-27.5 mb-3">
-            <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
+            <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-text-primary text-center">
               AddisEV is built to extend over time, so you can connect charging with energy, operations, and
             </p>
-            <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-[#020202] text-center">
+            <p className="text-sm sm:text-[15px] md:text-md font-normal leading-md text-text-primary text-center">
               enterprise systems as your network grows.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function DesignedToConnect() {
             {integrations.map((integration) => (
               <div
                 key={integration.id}
-                className="flex flex-col gap-2.5 items-center bg-[linear-gradient(138deg,#01121a_0%,#055980_100%)] border border-[#2c547f] rounded-md p-5 sm:p-5 md:p-4 lg:p-5"
+                className="addisev-gradient-panel flex flex-col items-center gap-2.5 rounded-md border border-border-secondary p-5 sm:p-5 md:p-4 lg:p-5"
               >
                 <Image
                   src={integration.icon}
@@ -68,12 +68,12 @@ export default function DesignedToConnect() {
                 <div className="flex flex-col items-center">
                   {Array.isArray(integration.title) ? (
                     integration.title.map((line, index) => (
-                      <h3 key={index} className="text-xl font-bold leading-xl text-[#ffffff] text-center">
+                      <h3 key={index} className="text-xl font-bold leading-xl text-text-inverse text-center">
                         {line}
                       </h3>
                     ))
                   ) : (
-                    <h3 className="text-xl font-bold leading-xl text-[#ffffff] text-center">
+                    <h3 className="text-xl font-bold leading-xl text-text-inverse text-center">
                       {integration.title}
                     </h3>
                   )}
@@ -81,7 +81,7 @@ export default function DesignedToConnect() {
 
                 <div className="flex flex-col items-center">
                   {integration.description.map((line, index) => (
-                    <p key={index} className="text-md font-normal leading-md text-[#ffffff] text-center">
+                    <p key={index} className="text-md font-normal leading-md text-text-inverse text-center">
                       {line}
                     </p>
                   ))}

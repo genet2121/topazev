@@ -4,6 +4,7 @@ import { useState } from 'react';
  import HeroSection from'./HeroSection';
  import WhatIsTopazEV from'./WhatIsTopazEV';
  import TryTheDemo from'./TryTheDemo';
+ import MobileAppShowcaseSection from './MobileAppShowcaseSection';
  import EverythingYouNeed from'./EverythingYouNeed';
  import DesignedToConnect from'./DesignedToConnect';
  import BuiltForOrganizations from'./BuiltForOrganizations';
@@ -25,20 +26,22 @@ export default function HomePage() {
     <>
       {showCookieConsent && <CookieConsentModal onClose={handleCookieConsent} />}
       
-      <main>
+      <>
         <HeroSection />
         <WhatIsTopazEV />
         <TryTheDemo />
+      
         <EverythingYouNeed />
         <DesignedToConnect />
         <BuiltForOrganizations />
         <WhatMakesTopazEVDifferent />
-        <UniversalCompatibility />
-        <LatestFromBlog />
+        {/* <UniversalCompatibility /> */}
+        {/* <LatestFromBlog /> */}
+        <MobileAppShowcaseSection />
         <PricingSection />
         <CTASection />
         <Footer />
-      </main>
+      </>
     </>
   )
 }

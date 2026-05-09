@@ -35,7 +35,7 @@ export default function CookieConsentModal({ onClose }: CookieConsentModalProps)
           </p>
           <p className="text-base text-black leading-relaxed">
             By clicking &quot;Allow all&quot; you consent to S44&apos;s collection of this tracking technology data for the above purposes. You can set your preferences by clicking &quot;Customize&quot;. Read more in our{' '}
-            <a href="#" className="text-blue-600 underline">
+            <a href="#" className="text-primary-accent underline">
               Privacy Policy
             </a>
           </p>

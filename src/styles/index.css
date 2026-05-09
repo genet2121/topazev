@@ -5,6 +5,11 @@
 /* Import Google Fonts */
 
 /* Global Base Styles */
+html,
+body {
+  background-color: var(--bg-main);
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;

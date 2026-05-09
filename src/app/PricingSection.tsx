@@ -63,15 +63,15 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="w-full bg-[#ffffff] py-16 sm:py-18 md:py-20 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-38 mt-[180px] sm:mt-[200px] md:mt-[220px] lg:mt-56.5"
+      className="mt-[180px] w-full bg-background-main py-16 sm:mt-[200px] sm:py-18 md:mt-[220px] md:py-20 lg:mt-56.5 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-38"
     >
       <div className="w-full max-w-[1120px] mx-auto">
         <div className="flex flex-col gap-12 sm:gap-14 md:gap-16">
           <div className="flex flex-col gap-4 sm:gap-5 items-center text-center px-2 sm:px-8 max-w-[720px] mx-auto">
-            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[1.15] text-[#020202]">
+            <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[1.15] text-text-primary">
               Pricing
             </h2>
-            <p className="text-sm sm:text-[15px] md:text-base font-normal leading-relaxed text-[#202024cc]">
+            <p className="text-sm sm:text-[15px] md:text-base font-normal leading-relaxed text-text-translucent">
               Clear, flexible plans without revenue sharing or per-session fees. You keep 100% of
               your charging revenue—we align pricing to your network size and how you deploy.
             </p>
@@ -81,22 +81,22 @@ export default function PricingSection() {
             {tiers.map((tier) => (
               <div
                 key={tier.id}
-                className="group relative flex flex-col rounded-lg bg-[#ffffff] px-7 py-8 text-[#020202] shadow-[0px_0px_60px_#00000019] ring-2 ring-transparent transition-all duration-300 ease-out sm:px-8 sm:py-9 hover:z-[1] hover:bg-[#02131b] hover:shadow-[0px_0px_60px_#00000029] hover:ring-[#00b4f5] lg:hover:scale-[1.02]"
+                className="group relative flex flex-col rounded-lg bg-background-main px-7 py-8 text-text-primary shadow-[0px_0px_60px_color-mix(in_srgb,var(--primary-background)_12%,transparent)] ring-2 ring-transparent transition-all duration-300 ease-out sm:px-8 sm:py-9 hover:z-[1] hover:bg-primary-background hover:shadow-[0px_0px_60px_color-mix(in_srgb,var(--primary-background)_22%,transparent)] hover:ring-primary-accent lg:hover:scale-[1.02]"
               >
                 <div className="mb-6 flex flex-col gap-2">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#00b4f5]">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-primary-accent">
                     {tier.name}
                   </p>
-                  <p className="text-base font-normal leading-relaxed text-[#202024b3] transition-colors group-hover:text-white/85">
+                  <p className="text-base font-normal leading-relaxed text-text-translucent transition-colors group-hover:text-white/85">
                     {tier.description}
                   </p>
                 </div>
 
-                <div className="mb-6 border-b border-dashed border-[#f0f0f0] pb-6 transition-colors group-hover:border-white/20">
-                  <p className="text-3xl font-bold leading-tight text-[#020202] transition-colors group-hover:text-white sm:text-4xl">
+                <div className="mb-6 border-b border-dashed border-border-muted pb-6 transition-colors group-hover:border-white/20">
+                  <p className="text-3xl font-bold leading-tight text-text-primary transition-colors group-hover:text-white sm:text-4xl">
                     {tier.priceLabel}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-[#20202499] transition-colors group-hover:text-white/70">
+                  <p className="mt-2 text-sm leading-relaxed text-text-translucent transition-colors group-hover:text-white/70">
                     {tier.priceDetail}
                   </p>
                 </div>
@@ -105,12 +105,12 @@ export default function PricingSection() {
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex gap-3 text-sm leading-snug sm:text-[15px]">
                       <span
-                        className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#e8f9fe] text-xs font-bold text-[#00b4f5] transition-colors group-hover:bg-[#00b4f5] group-hover:text-[#02131b]"
+                        className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--accent-tint-bg)] text-xs font-bold text-primary-accent transition-colors group-hover:bg-primary-accent group-hover:text-primary-background"
                         aria-hidden
                       >
                         ✓
                       </span>
-                      <span className="text-[#202024cc] transition-colors group-hover:text-white/90">
+                      <span className="text-text-translucent transition-colors group-hover:text-white/90">
                         {feature}
                       </span>
                     </li>
@@ -121,8 +121,8 @@ export default function PricingSection() {
                   type="button"
                   className={
                     tier.ctaVariant === 'primary'
-                      ? 'mt-auto w-full rounded-2xl border-0 bg-[#000000] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#333333] group-hover:bg-[#00b4f5] group-hover:text-[#02131b] group-hover:hover:bg-[#33c5f7]'
-                      : 'mt-auto w-full rounded-2xl border-2 border-[#020202] bg-transparent px-7 py-3.5 text-sm font-semibold text-[#020202] transition-colors hover:bg-[#f5f5f5] group-hover:border-white/40 group-hover:text-white group-hover:hover:bg-white/10'
+                      ? 'mt-auto w-full rounded-2xl border-0 bg-button-bg-primary px-7 py-3.5 text-sm font-semibold text-button-text-primary transition-colors hover:opacity-90 group-hover:bg-primary-accent group-hover:text-primary-background group-hover:hover:bg-[var(--primary-accent-hover)]'
+                      : 'mt-auto w-full rounded-2xl border-2 border-text-primary bg-transparent px-7 py-3.5 text-sm font-semibold text-text-primary transition-colors hover:bg-background-card group-hover:border-white/40 group-hover:text-white group-hover:hover:bg-white/10'
                   }
                 >
                   {tier.cta}
@@ -131,7 +131,7 @@ export default function PricingSection() {
             ))}
           </div>
 
-          <p className="text-center text-xs sm:text-sm text-[#20202480] max-w-[640px] mx-auto">
+          <p className="mx-auto max-w-[640px] text-center text-xs text-text-translucent sm:text-sm">
             Final pricing depends on deployment model, integrations, and support level. We will
             share a tailored quote after a short discovery call.
           </p>

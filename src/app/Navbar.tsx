@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="fixed inset-x-0 top-0 z-50 w-full">
       <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 md:px-8 lg:px-14 pt-4 sm:pt-5">
-        <div className="mx-auto flex items-center justify-between w-full max-w-[560px] bg-[#00000099] rounded-xl px-4 py-2.5 backdrop-blur-md">
+        <div className="mx-auto flex w-full max-w-[560px] items-center justify-between rounded-xl bg-background-overlay px-4 py-2.5 backdrop-blur-md">
           <div className="flex items-center gap-2.5">
             <Image
               src="/images/img_pfad_20486.svg"
@@ -13,10 +13,10 @@ export default function Navbar() {
               height={20}
               className="w-[60px] sm:w-[65px] md:w-[70px] lg:w-[74px]"
             />
-            <div className="w-[1px] h-5 bg-[#ffffff99]" />
+            <div className="h-5 w-[1px] bg-background-translucent" />
             <span className="text-white font-semibold text-sm sm:text-base tracking-wide">CSMS</span>
           </div>
-          <button className="bg-[#ffffff] rounded-lg px-4 py-2 text-sm font-bold text-[#020202] hover:bg-[#f5f5f5] transition-colors ml-6">
+          <button className="ml-6 rounded-lg bg-background-main px-4 py-2 text-sm font-bold text-text-primary transition-colors hover:bg-background-card">
             Get in Touch
           </button>
         </div>

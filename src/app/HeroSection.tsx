@@ -3,18 +3,18 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full -mt-20 min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[720px]">
+    <section className="relative w-full -mt-20 min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[820px]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
-          src="/assets/images/Screenshot_from_2026-04-28_09-10-19-1777356660432.png"
+          src="/images/hero.jpg"
           alt="EV charging station at dusk with electric car and glowing canopy"
           fill
           className="object-cover object-center"
           priority
         />
         {/* Dark gradient overlay — stronger on left, fades to transparent on right */}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,#02131b_0%,#02131bcc_30%,#04374f66_60%,#04374f00_100%)]" />
+        <div className="addisev-hero-overlay absolute inset-0" />
       </div>
 
       {/* Content */}
@@ -30,7 +30,7 @@ export default function HeroSection() {
               height={100}
               className="h-auto w-14 shrink-0 sm:w-16"
             />
-            <p className="text-white text-5xl font-bold uppercase">
+            <p className="text-white text-5xl font-bold ">
               Addis<span className="text-primary-accent">EV</span>
             </p>
           </div>
@@ -52,10 +52,10 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-row gap-3.5">
-            <button className="bg-[#ffffff] border border-[#ffffff] rounded-full px-7 py-3 text-sm font-semibold text-[#000000] hover:bg-[#f0f0f0] transition-colors whitespace-nowrap">
+            <button className="rounded-full border border-background-main bg-background-main px-7 py-3 text-sm font-semibold text-primary-background transition-colors hover:bg-background-card whitespace-nowrap">
               Request Demo
             </button>
-            <button className="border-2 border-[#ffffff] rounded-full px-7 py-3 text-sm font-semibold text-[#ffffff] hover:bg-[#ffffff] hover:text-[#000000] transition-colors whitespace-nowrap">
+            <button className="rounded-full border-2 border-background-main px-7 py-3 text-sm font-semibold text-text-inverse transition-colors hover:bg-background-main hover:text-primary-background whitespace-nowrap">
               How it works
             </button>
           </div>
