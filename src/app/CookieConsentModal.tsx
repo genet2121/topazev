@@ -25,7 +25,7 @@ export default function CookieConsentModal({ onClose }: CookieConsentModalProps)
       <div className="relative w-full sm:max-w-[560px] bg-white rounded-t-3xl sm:rounded-3xl px-8 pt-10 pb-10">
         {/* Title */}
         <h2 className="text-[2rem] sm:text-[2.25rem] font-bold text-black leading-tight mb-6">
-          Welcome to S44
+          Welcome to AddisEV
         </h2>
 
         {/* Body text */}
@@ -34,7 +34,7 @@ export default function CookieConsentModal({ onClose }: CookieConsentModalProps)
             To give you the best experience, we collect data from your usage and your device to operate the site and its features, others are for statistical or marketing purposes.
           </p>
           <p className="text-base text-black leading-relaxed">
-            By clicking &quot;Allow all&quot; you consent to S44&apos;s collection of this tracking technology data for the above purposes. You can set your preferences by clicking &quot;Customize&quot;. Read more in our{' '}
+            By clicking &quot;Allow all&quot; you consent to AddisEV&apos;s collection of this tracking technology data for the above purposes. You can set your preferences by clicking &quot;Customize&quot;. Read more in our{' '}
             <a href="#" className="text-primary-accent underline">
               Privacy Policy
             </a>

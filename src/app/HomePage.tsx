@@ -13,7 +13,6 @@ import WhatMakesTopazEVDifferent from './WhatMakesTopazEVDifferent';
  import LatestFromBlog from'./LatestFromBlog';
  import PricingSection from './PricingSection';
  import CTASection from'./CTASection';
- import Footer from'./Footer';
 
 export default function HomePage() {
   const [showCookieConsent, setShowCookieConsent] = useState<boolean>(true)
@@ -40,7 +39,6 @@ export default function HomePage() {
         <MobileAppShowcaseSection />
         <PricingSection />
         <CTASection />
-        <Footer />
       </>
     </>
   )
