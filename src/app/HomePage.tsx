@@ -26,7 +26,7 @@ export default function HomePage() {
     <>
       {showCookieConsent && <CookieConsentModal onClose={handleCookieConsent} />}
       
-      <main>
+      <>
         <HeroSection />
         <WhatIsTopazEV />
         <TryTheDemo />
@@ -35,13 +35,13 @@ export default function HomePage() {
         <DesignedToConnect />
         <BuiltForOrganizations />
         <WhatMakesTopazEVDifferent />
-        <UniversalCompatibility />
+        {/* <UniversalCompatibility /> */}
         {/* <LatestFromBlog /> */}
         <MobileAppShowcaseSection />
         <PricingSection />
         <CTASection />
         <Footer />
-      </main>
+      </>
     </>
   )
 }

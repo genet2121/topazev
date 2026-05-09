@@ -5,7 +5,7 @@ export default function UniversalCompatibility() {
   const column3 = ['Megmeet', 'SwitchEV', 'Udenco', 'VectorInformatik', 'Wallbox', 'XCharge']
 
   return (
-    <section className="mt-[90px] w-full bg-background-main py-16 sm:mt-[100px] sm:py-18 md:mt-[105px] md:py-20 lg:mt-27.5 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-14">
+    <section className="mt-[90px] w-full bg-background-main px-4 py-16 pb-0 sm:mt-[100px] sm:py-18 sm:pb-0 md:mt-[105px] md:py-20 md:pb-0 lg:mt-27.5 lg:py-20 lg:pb-0 sm:px-6 md:px-8 lg:px-14">
       <div className="w-full max-w-[1120px] mx-auto">
         <div className="flex flex-col gap-16.5 sm:gap-16.5 md:gap-16.5 lg:gap-16.5 items-center">
           <h2 className="text-lg font-bold leading-lg text-text-primary text-center">

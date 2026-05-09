@@ -16,7 +16,7 @@ export default function WhatMakesAddisEVDifferent() {
       id: 1,
       question: 'How does AddisEV help operators scale their networks cost-effectively?',
       answer:
-        'AddisEV uses clear, predictable pricing with no revenue sharing or per-session fees. As you add chargers, the per-station cost can decrease, helping you scale without surprises while keeping 100% of your charging revenue.',
+        'AddisEV uses clear, predictable pricing with no revenue sharing or per-session fees. As you add chargers, the per-station cost can decrease, helping you scale without surprises while keeping better of your charging revenue.',
     },
     {
       id: 2,
@@ -28,20 +28,20 @@ export default function WhatMakesAddisEVDifferent() {
       id: 3,
       question: 'Is AddisEV secure and compliant with industry standards?',
       answer:
-        'AddisEV is designed to support enterprise deployments and modern OCPP versions. Security posture depends on your deployment and configuration, but the platform is built to support best practices like access control, auditability, and secure integrations.',
+        'AddisEV is designed to support small businesses and enterprise deployments and modern OCPP versions. Security posture depends on your deployment and configuration, but the platform is built to support best practices like access control, auditability, and secure integrations.',
     },
-    {
-      id: 4,
-      question: 'What does it mean that AddisEV is "Powered by Open-Source Innovation"?',
-      answer:
-        'It means the platform is built on open-source foundations (like CitrineOS), so you benefit from transparent development, extensibility, and a broader ecosystem—without vendor lock-in.',
-    },
-    {
-      id: 5,
-      question: 'How is AddisEV different from traditional Charge Station Management Systems (CSMS)?',
-      answer:
-        'AddisEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
-    },
+    // {
+    //   id: 4,
+    //   question: 'What does it mean that AddisEV is "Powered by Open-Source Innovation"?',
+    //   answer:
+    //     'It means the platform is built on open-source foundations (like CitrineOS), so you benefit from transparent development, extensibility, and a broader ecosystem—without vendor lock-in.',
+    // },
+    // {
+    //   id: 5,
+    //   question: 'How is AddisEV different from traditional Charge Station Management Systems (CSMS)?',
+    //   answer:
+    //     'AddisEV combines a managed experience with open-source flexibility. You get fast time-to-value and ongoing support, while still keeping open APIs, OCPP compatibility, and control over your data and integrations.',
+    // },
     {
       id: 6,
       question: 'Can AddisEV support both new and existing EV networks?',
@@ -52,7 +52,7 @@ export default function WhatMakesAddisEVDifferent() {
       id: 7,
       question: 'What technologies does AddisEV support for integration?',
       answer:
-        'AddisEV supports OCPP 1.6, 2.0.1, and 2.1 for charger communication, plus REST-style APIs and webhooks for billing, CRM, identity, and custom dashboards. Because it builds on CitrineOS and open standards, you can integrate with common cloud stacks and your own services.',
+        'AddisEV supports OCPP 1.6, 2.0.1, and 2.1 for charger communication, plus REST-style APIs and webhooks for billing, CRM, identity, and custom dashboards. Because it builds on  open standards, you can integrate with common cloud stacks and your own services.',
     },
     {
       id: 8,
@@ -80,10 +80,10 @@ export default function WhatMakesAddisEVDifferent() {
                 Scale your EV charging infrastructure without unpredictable costs. AddisEV offers
               </p>
               <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
-                clear, flexible pricing without revenue sharing or per-session charges. As your
+                clear, flexible pricing without revenue sharing . As your
               </p>
               <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
-                network expands, benefit from decreasing per-station costs, keeping 100% of your
+                network expands, benefit from decreasing per-station costs, keeping better of your
               </p>
               <p className="text-center text-sm font-normal leading-md text-text-primary sm:text-[15px] md:text-md">
                 charging revenue.

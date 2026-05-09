@@ -7,7 +7,7 @@ export default function WhatIsAddisEV() {
       id: 1,
       icon: '/images/img_image.png',
       title: 'Production-ready CSMS',
-      description: ['Vertically & horizontally', 'scalable; Built on CitrineOS.']
+      description: ['Vertically & horizontally', 'scalable; ']
     },
     // {
     //   id: 2,

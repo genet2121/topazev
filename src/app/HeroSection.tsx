@@ -30,7 +30,7 @@ export default function HeroSection() {
               height={100}
               className="h-auto w-14 shrink-0 sm:w-16"
             />
-            <p className="text-white text-5xl font-bold uppercase">
+            <p className="text-white text-5xl font-bold ">
               Addis<span className="text-primary-accent">EV</span>
             </p>
           </div>

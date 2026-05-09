@@ -11,7 +11,7 @@ export default function CTASection() {
         backgroundPosition: 'center'
       }}
     >
-      <div className="w-full max-w-[1080px] mx-auto px-7.5 py-8.5">
+      <div className="w-full max-w-[900px] mx-auto px-7.5 py-8.5">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-8 mt-5">
           <div className="flex flex-col gap-7.5 w-full sm:w-[90%] px-5 sm:px-5 md:px-5 lg:px-5">
             <div className="flex flex-col">

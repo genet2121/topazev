@@ -94,13 +94,13 @@ export default function TryTheDemo() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[56%] flex justify-center">
+            <div className="w-full lg:w-[86%] flex justify-center ">
               <Image
                 src="/images/dashboard.jpg"
                 alt="Demo Dashboard"
                 width={726}
-                height={764}
-                className="w-full max-w-[600px] sm:max-w-[650px] md:max-w-[700px] lg:max-w-[726px] rounded-lg"
+                height={1200}
+                className="w-full max-w-[800px] sm:max-w-[650px] md:max-w-[700px] lg:max-w-[1200px] rounded-lg h-[500px]"
               />
             </div>
           </div>
