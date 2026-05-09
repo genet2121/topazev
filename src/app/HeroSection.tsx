@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -47,17 +48,23 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="text-sm sm:text-[15px] md:text-base font-normal leading-relaxed text-white max-w-[480px]">
-            AddisEV is a fully managed Charge Station Management System built on CitrineOS. Launch faster, monitor chargers in real time, and scale with open APIs and support for OCPP 1.6, 2.0.1, and 2.1.
+            AddisEV is a fully managed Charge Station Management System. Launch faster, monitor chargers in real time, and scale with open APIs and support for OCPP 1.6, 2.0.1, and 2.1.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-row gap-3.5">
-            <button className="rounded-full border border-background-main bg-background-main px-7 py-3 text-sm font-semibold text-primary-background transition-colors hover:bg-background-card whitespace-nowrap">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full border border-background-main bg-background-main px-7 py-3 text-sm font-semibold text-primary-background transition-colors hover:bg-background-card whitespace-nowrap"
+            >
               Request Demo
-            </button>
-            <button className="rounded-full border-2 border-background-main px-7 py-3 text-sm font-semibold text-text-inverse transition-colors hover:bg-background-main hover:text-primary-background whitespace-nowrap">
+            </Link>
+            <Link
+              href="/#what-is-addisev"
+              className="inline-flex items-center justify-center rounded-full border-2 border-background-main px-7 py-3 text-sm font-semibold text-text-inverse transition-colors hover:bg-background-main hover:text-primary-background whitespace-nowrap"
+            >
               How it works
-            </button>
+            </Link>
           </div>
         </div>
       </div>

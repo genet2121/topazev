@@ -20,7 +20,7 @@ export default function MobileAppShowcaseSection() {
   return (
     <section
       id="mobile-app"
-      className="relative w-full overflow-hidden bg-background-card px-4 pb-20 pt-16 sm:px-6 sm:pb-24 sm:pt-20 md:pb-24 md:pt-24 lg:px-14 lg:pb-[7rem] lg:pt-28"
+      className="relative w-full overflow-hidden addisev-gradient-cta px-4 pb-20 pt-16 sm:px-6 sm:pb-24 sm:pt-20 md:pb-24 md:pt-24 lg:px-14 lg:pb-[7rem] lg:pt-28"
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.75]"
@@ -57,29 +57,29 @@ export default function MobileAppShowcaseSection() {
         </div>
 
         <div className="flex flex-col gap-8 lg:order-2 lg:max-w-[560px] lg:pl-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-accent">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white">
             Mobile app
           </p>
-          <h2 className="text-[28px] font-bold leading-[1.12] text-text-primary sm:text-[34px] md:text-[40px] lg:text-[44px]">
+          <h2 className="text-[28px] font-bold leading-[1.12] text-white sm:text-[34px] md:text-[40px] lg:text-[44px]">
             Promote your network with the AddisEV driver app
           </h2>
-          <p className="text-base leading-relaxed text-text-secondary sm:text-[17px]">
+          <p className="text-base leading-relaxed text-white sm:text-[17px]">
             Showcase your stations with a modern driver experience—onboarding, discovery, and a
             clear path to starting a charge. Designed to feel premium, fast, and trustworthy.
           </p>
 
           <ul className="flex flex-col gap-5">
             {highlights.map((item) => (
-              <li key={item.title} className="flex gap-4">
+              <li key={item.title} className="flex gap-4 ">
                 <span
-                  className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[color-mix(in_srgb,var(--primary-accent)_18%,transparent)] text-sm font-bold text-primary-accent"
+                  className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[color-mix(in_srgb,var(--primary-accent)_18%,transparent)] text-sm font-bold text-white"
                   aria-hidden
                 >
                   ✓
                 </span>
                 <div>
-                  <p className="font-semibold text-text-primary">{item.title}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-text-secondary sm:text-[15px]">
+                  <p className="font-semibold text-white">{item.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-white sm:text-[15px]">
                     {item.body}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export default function MobileAppShowcaseSection() {
             </button>
             <button
               type="button"
-              className="rounded-full border-2 border-primary-accent bg-transparent px-8 py-3.5 text-sm font-semibold text-primary-accent transition-colors hover:bg-[var(--accent-tint-bg)]"
+              className="rounded-full border-2 border-white bg-transparent px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-tint-bg)]"
             >
               Partner with us
             </button>

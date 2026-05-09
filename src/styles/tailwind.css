@@ -236,6 +236,25 @@
     background: linear-gradient(90deg, var(--secondary-background) 0%, var(--primary-accent) 100%);
   }
 
+  /* CTA strip — replaces raster hero image */
+  .addisev-gradient-cta {
+    background: linear-gradient(
+      135deg,
+      var(--primary-background) 0%,
+      var(--secondary-background) 42%,
+      var(--primary-accent) 78%,
+      color-mix(in srgb, var(--secondary-light) 40%, var(--primary-accent)) 100%
+    );
+  }
+
+  .addisev-gradient-cta-glow {
+    background: radial-gradient(
+      ellipse 70% 80% at 85% 20%,
+      color-mix(in srgb, var(--secondary-light) 18%, transparent),
+      transparent 55%
+    );
+  }
+
   .addisev-blog-showcase {
     background: linear-gradient(
       155deg,
@@ -273,5 +292,33 @@
       color-mix(in srgb, var(--primary-accent) 36%, transparent),
       transparent 68%
     );
+  }
+
+  .legal-prose h2 {
+    @apply scroll-mt-24 text-xl font-bold text-text-primary;
+  }
+
+  .legal-prose h3 {
+    @apply mt-6 text-lg font-semibold text-text-primary;
+  }
+
+  .legal-prose p {
+    @apply text-text-secondary;
+  }
+
+  .legal-prose a {
+    @apply font-medium text-primary-accent underline underline-offset-2 hover:text-[var(--primary-accent-hover)];
+  }
+
+  .legal-prose ul {
+    @apply list-disc space-y-2 pl-6 text-text-secondary;
+  }
+
+  .legal-prose li {
+    @apply leading-relaxed;
+  }
+
+  .legal-prose strong {
+    @apply font-semibold text-text-primary;
   }
 }

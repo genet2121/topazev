@@ -147,11 +147,12 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link href="/privacy" className="text-xs text-text-secondary hover:text-text-inverse transition-colors">
-                Privacy
+                Privacy Policy
               </Link>
-              <Link href="/imprint" className="text-xs text-text-secondary hover:text-text-inverse transition-colors">
-                Imprint
+              <Link href="/terms" className="text-xs text-text-secondary hover:text-text-inverse transition-colors">
+                Terms of Use
               </Link>
+           
             </div>
           </div>
         </div>

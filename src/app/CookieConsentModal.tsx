@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 interface CookieConsentModalProps {
@@ -35,9 +36,9 @@ export default function CookieConsentModal({ onClose }: CookieConsentModalProps)
           </p>
           <p className="text-base text-black leading-relaxed">
             By clicking &quot;Allow all&quot; you consent to AddisEV&apos;s collection of this tracking technology data for the above purposes. You can set your preferences by clicking &quot;Customize&quot;. Read more in our{' '}
-            <a href="#" className="text-primary-accent underline">
+            <Link href="/privacy" className="text-primary-accent underline">
               Privacy Policy
-            </a>
+            </Link>
           </p>
         </div>
 
@@ -45,14 +46,14 @@ export default function CookieConsentModal({ onClose }: CookieConsentModalProps)
         <div className="flex flex-col gap-3 w-full">
           <button
             onClick={handleAllowAll}
-            className="w-full bg-black text-white text-base font-semibold py-5 rounded-full hover:bg-neutral-800 transition-colors"
+            className="w-full bg-background-dark text-white text-base font-semibold py-5 rounded-full hover:bg-slate-800 transition-colors"
           >
             Allow all
           </button>
 
           <button
             onClick={handleRequiredOnly}
-            className="w-full bg-black text-white text-base font-semibold py-5 rounded-full hover:bg-neutral-800 transition-colors"
+            className="w-full bg-background-dark text-white text-base font-semibold py-5 rounded-full hover:bg-slate-800 transition-colors"
           >
             Required only
           </button>
