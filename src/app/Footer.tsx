@@ -122,7 +122,7 @@ export default function Footer() {
                 <p className="mt-4 text-sm leading-relaxed text-text-secondary">
                   Get product updates and release notes. No spam.
                 </p>
-                <div className="mt-4 flex gap-2">
+                {/* <div className="mt-4 flex gap-2">
                   <input
                     type="email"
                     placeholder="Email address"
@@ -134,7 +134,7 @@ export default function Footer() {
                   >
                     Subscribe
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
