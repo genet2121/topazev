@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const highlights = [
   {
@@ -94,12 +95,12 @@ export default function MobileAppShowcaseSection() {
             >
               Get the app
             </button>
-            <button
-              type="button"
-              className="rounded-full border-2 border-white bg-transparent px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-tint-bg)]"
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-tint-bg)]"
             >
               Partner with us
-            </button>
+            </Link>
           </div>
         </div>
       </div>

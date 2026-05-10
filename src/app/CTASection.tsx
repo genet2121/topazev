@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CTASection() {
   return (
@@ -31,9 +32,9 @@ export default function CTASection() {
               </p>
             </div>
 
-            <button className="w-fit rounded-2xl border border-background-main bg-background-main px-7.5 py-3.5 text-sm font-semibold leading-sm text-primary-background transition-colors hover:bg-background-card">
+            <Link href="/contact" className="w-fit rounded-2xl border border-background-main bg-background-main px-7.5 py-3.5 text-sm font-semibold leading-sm text-primary-background transition-colors hover:bg-background-card">
               Get Demo Access
-            </button>
+            </Link>
           </div>
 
           <button className="flex-shrink-0 rounded-full border-thick border-background-main p-5.5">

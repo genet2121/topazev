@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Image from 'next/image';
 
 interface FAQItem {
   id: number;
@@ -67,7 +66,10 @@ export default function WhatMakesAddisEVDifferent() {
   };
 
   return (
-    <section className="mt-[100px] w-full bg-background-main px-4 py-16 sm:mt-[110px] sm:py-18 md:mt-[120px] md:py-20 lg:mt-32.5 lg:py-20 sm:px-6 md:px-8 lg:px-38">
+    <section
+      id="faq"
+      className="scroll-mt-24 mt-[100px] w-full bg-background-main px-4 py-16 sm:mt-[110px] sm:py-18 md:mt-[120px] md:py-20 lg:mt-32.5 lg:py-20 sm:px-6 md:px-8 lg:px-38"
+    >
       <div className="mx-auto w-full max-w-[1120px]">
         <div className="flex flex-col gap-[70px] sm:gap-[75px] md:gap-[80px] lg:gap-21.5">
           <div className="flex flex-col items-center gap-9 px-4 sm:px-8 md:px-12 lg:px-56">
@@ -111,16 +113,48 @@ export default function WhatMakesAddisEVDifferent() {
                       <span className="flex-1 text-base font-bold leading-sm text-text-primary">
                         {item.question}
                       </span>
-                      <Image
-                        src="/images/img_image_faq_arrow.svg"
-                        alt=""
-                        width={16}
-                        height={16}
-                        className={`mt-1 w-icon-sm shrink-0 transition-transform duration-200 ${
+                      <span
+                        className={`mt-1 shrink-0 text-primary-accent transition-transform duration-200 ${
                           isOpen ? 'rotate-45' : ''
                         }`}
                         aria-hidden
-                      />
+                      >
+                        <svg
+                          width={16}
+                          height={16}
+                          viewBox="0 0 16 16"
+                          className="block h-4 w-4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clipPath={`url(#faq-plus-clip-${item.id})`}>
+                            <path
+                              d="M14.4647 8.10303H1.32891"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M7.89697 1.53516L7.89697 14.671"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id={`faq-plus-clip-${item.id}`}>
+                              <rect
+                                width="16"
+                                height="16"
+                                fill="white"
+                                transform="matrix(0 1 -1 0 16 0)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
                     </button>
                     {isOpen && item.answer ? (
                       <div

@@ -35,7 +35,7 @@ export default function Footer() {
                 sales@addisev.com
               </a>
               <Link
-                href="#pricing"
+                href="/#pricing"
                 className="rounded-full border border-white/15 bg-transparent px-4 py-2 text-sm font-semibold text-text-inverse transition-colors hover:border-white/30 hover:bg-white/5"
               >
                 Pricing
@@ -44,7 +44,7 @@ export default function Footer() {
 
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://github.com/"
+                href="https://github.com/Shambu-p"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-text-inverse transition-colors hover:border-white/30 hover:bg-white/10"
@@ -56,7 +56,7 @@ export default function Footer() {
                 </span>
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/abnet-kebede-3a564b221/"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-text-inverse transition-colors hover:border-white/30 hover:bg-white/10"
@@ -87,13 +87,13 @@ export default function Footer() {
               <div>
                 <p className="text-sm font-semibold text-text-inverse">Product</p>
                 <div className="mt-4 flex flex-col gap-3">
-                  <Link href="#mobile-app" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
+                  <Link href="/#mobile-app" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     Driver app
                   </Link>
-                  <Link href="#pricing" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
+                  <Link href="/#pricing" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     Pricing
                   </Link>
-                  <Link href="#pricing" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
+                  <Link href="/contact" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     Request demo
                   </Link>
                 </div>
@@ -102,16 +102,16 @@ export default function Footer() {
               <div>
                 <p className="text-sm font-semibold text-text-inverse">Company</p>
                 <div className="mt-4 flex flex-col gap-3">
-                  <Link href="#mobile-app" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
+                  <Link href="/#hero" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     About
                   </Link>
                   <a
-                    href="mailto:sales@topazev.com"
+                    href="/contact"
                     className="text-sm text-text-secondary hover:text-text-inverse transition-colors"
                   >
                     Contact
                   </a>
-                  <Link href="#pricing" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
+                  <Link href="/contact" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     Partnerships
                   </Link>
                 </div>
@@ -120,7 +120,7 @@ export default function Footer() {
               <div className="col-span-2 sm:col-span-1">
                 <p className="text-sm font-semibold text-text-inverse">Stay in the loop</p>
                 <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                  Get product updates and release notes. No spam.
+                  Get product updates and release notes.
                 </p>
                 {/* <div className="mt-4 flex gap-2">
                   <input

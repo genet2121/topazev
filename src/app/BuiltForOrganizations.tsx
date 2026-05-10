@@ -3,8 +3,8 @@ import Image from'next/image';
 
 export default function BuiltForOrganizations() {
   return (
-    <section className="relative w-full overflow-hidden">
-      <div className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] lg:h-[634px]">
+    <section className="relative w-full overflow-hidden ">
+      <div className="relative w-full h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px]">
         <div className="addisev-gradient-built absolute inset-0 flex items-center justify-center px-4 py-3 sm:px-6 md:px-8 lg:px-22.5">
           <Image
             src="/images/img_vector_530x530.png"
@@ -28,11 +28,11 @@ export default function BuiltForOrganizations() {
             </div>
 
             <Image
-              src="/images/img_image_global_a-Photoroom.png"
+              src="/images/combo2.png"
               alt="Organization Types"
               width={600}
               height={350}
-              className="w-full max-w-[450px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[600px] mx-auto"
+              className="w-full max-w-[450px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[1000px] mx-auto"
             />
           </div>
         </div>

@@ -175,7 +175,7 @@ export default function PricingSection() {
               Pricing
             </h2>
             <p className="text-sm font-normal leading-relaxed text-text-translucent sm:text-[15px] md:text-base">
-              Clear, flexible plans without revenue sharing or per-session fees. You keep 100% of
+              Clear, flexible plans without revenue sharing or per-session fees. You keep best of
               your charging revenue—we align pricing to your network size and how you deploy.
             </p>
           </div>
@@ -242,7 +242,7 @@ export default function PricingSection() {
                         <p className="mt-0.5 text-sm font-semibold leading-snug text-text-primary transition-colors lg:group-hover:text-white">
                           {tier.revenueSharing
                             ? 'Revenue sharing on sessions'
-                            : 'No revenue sharing — you keep 100%'}
+                            : 'No revenue sharing '}
                         </p>
                       </div>
                     </div>
