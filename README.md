@@ -2,7 +2,7 @@
 
 A modern Next.js 14 application built with TypeScript and Tailwind CSS.
 
-## 🚀 Features
+##  Features
 
 - **Next.js 14** - Latest version with improved performance and features
 - **React 18** - Latest React version with enhanced capabilities
@@ -14,7 +14,7 @@ A modern Next.js 14 application built with TypeScript and Tailwind CSS.
 - npm or yarn
 
 
-## 🛠️ Installation
+##  Installation
 
 1. Install dependencies:
   ```bash
@@ -49,7 +49,7 @@ nextjs-js-tailwind/
 
 ```
 
-## 🧩 Page Editing
+## Page Editing
 
 You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -88,10 +88,3 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out the [Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new](https://rocket.new)
-- Powered by Next.js and React
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new
