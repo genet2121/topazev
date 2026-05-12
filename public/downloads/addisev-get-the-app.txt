@@ -1,0 +1,14 @@
+AddisEV — Driver app
+====================
+
+Thank you for your interest in the AddisEV driver app.
+
+This document is a placeholder you can replace with store links, an APK policy,
+or onboarding steps your team approves.
+
+Next steps
+----------
+• Contact your AddisEV representative for TestFlight / Play Console access, or
+• Email: sales@addisev.com
+
+© AddisEV

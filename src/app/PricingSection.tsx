@@ -186,13 +186,11 @@ export default function PricingSection() {
                 key={tier.id}
                 className="group relative flex flex-col rounded-2xl bg-background-main px-6 py-8 text-text-primary shadow-[0px_0px_60px_color-mix(in_srgb,var(--primary-background)_12%,transparent)] ring-2 ring-transparent transition-all duration-300 ease-out sm:px-8 sm:py-9 lg:hover:z-[1] lg:hover:scale-[1.02] lg:hover:bg-primary-background lg:hover:shadow-[0px_0px_60px_color-mix(in_srgb,var(--primary-background)_22%,transparent)] lg:hover:ring-primary-accent"
               >
-                <div className="mb-6 flex flex-col gap-2">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-primary-accent transition-colors lg:group-hover:text-[color-mix(in_srgb,var(--primary-accent)_88%,white)]">
+                <div className=" flex flex-col gap-2">
+                  {/* <p className="text-xs font-semibold uppercase tracking-wide text-primary-accent transition-colors lg:group-hover:text-[color-mix(in_srgb,var(--primary-accent)_88%,white)]">
                     {tier.name}
-                  </p>
-                  <p className="text-base font-normal leading-relaxed text-text-translucent transition-colors lg:group-hover:text-white/85">
-                    {tier.description}
-                  </p>
+                  </p> */}
+                 
                 </div>
 
                 <div className="mb-6 border-b border-dashed border-border-muted pb-6 transition-colors lg:group-hover:border-white/20">
@@ -201,6 +199,9 @@ export default function PricingSection() {
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-text-translucent transition-colors lg:group-hover:text-white/70">
                     {tier.priceDetail}
+                  </p>
+                  <p className="text-base font-normal leading-relaxed text-text-translucent transition-colors lg:group-hover:text-white/85">
+                    {tier.description}
                   </p>
                 </div>
 

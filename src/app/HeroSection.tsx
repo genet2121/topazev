@@ -35,7 +35,7 @@ export default function HeroSection() {
               className="h-auto w-14 shrink-0 sm:w-16"
             />
             <p className="text-white text-5xl font-bold ">
-              Addis<span className="text-primary-accent">EV</span>
+              Addis<span className="">EV</span>
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="text-sm sm:text-[15px] md:text-base font-normal leading-relaxed text-white max-w-[480px]">
-            AddisEV is a fully managed Charge Station Management System. Launch faster, monitor chargers in real time, and scale with open APIs and support for OCPP 1.6, 2.0.1, and 2.1.
+            AddisEV is a fully managed Charge Station Management System. Launch faster, monitor chargers in real time, and scale with APIs and support for OCPP 1.6, 2.0.1, and 2.1.
           </p>
 
           {/* CTA Buttons */}
@@ -62,12 +62,13 @@ export default function HeroSection() {
             >
               Request Demo
             </Link>
-            <Link
-              href="/#what-is-addisev"
+            <a
+              href="/downloads/addisev-get-the-app.txt"
+              download="AddisEV-Get-the-App.txt"
               className="inline-flex items-center justify-center rounded-full border-2 border-background-main px-7 py-3 text-sm font-semibold text-text-inverse transition-colors hover:bg-background-main hover:text-primary-background whitespace-nowrap"
             >
-              How it works
-            </Link>
+              Get the App
+            </a>
           </div>
         </div>
       </div>

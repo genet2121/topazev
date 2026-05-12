@@ -16,7 +16,7 @@ export default function CTASection() {
           <div className="flex flex-col gap-7.5 w-full sm:w-[90%] px-5 sm:px-5 md:px-5 lg:px-5">
             <div className="flex flex-col">
               <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-inverse">
-                Open EV charging software, fully
+                Addis EV charging software, fully
               </h2>
               <h2 className="ml-2 text-[28px] sm:text-[32px] md:text-[36px] lg:text-4xl font-bold leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-4xl text-text-inverse">
                 managed for scale
@@ -33,7 +33,7 @@ export default function CTASection() {
             </div>
 
             <Link href="/contact" className="w-fit rounded-2xl border border-background-main bg-background-main px-7.5 py-3.5 text-sm font-semibold leading-sm text-primary-background transition-colors hover:bg-background-card">
-              Get Demo Access
+              Contact Us
             </Link>
           </div>
 

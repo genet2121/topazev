@@ -15,19 +15,19 @@ export const metadata = {
     apple: '/images/AddisEV-LOGO-TP.png',
   },
   title: {
-    default: 'AddisEV - Open Source EV Charging Platform',
-    template: 'AddisEV - Open Source EV Charging Platform | %s',
+    default: 'AddisEV - Charging Platform',
+    template: 'AddisEV - Charging Platform | %s',
   },
-  description: 'AddisEV is a fully managed, open-source Charge Station Management System built on CitrineOS. Enterprise-grade EV charging infrastructure with OCPP 1.6 and 2.0.1 compatibility for scalable electric vehicle charging solutions.',
-  keywords: 'EV charging, electric vehicle charging, OCPP, CitrineOS, charge station management, open source EV, CSMS, charging infrastructure, OCPP 2.0.1, charging platform',
+  description: 'AddisEV is a fully managed,  Charge Station Management System . Enterprise-grade EV charging infrastructure with OCPP 1.6 and 2.0.1 compatibility for scalable electric vehicle charging solutions.',
+  keywords: 'EV charging, electric vehicle charging, OCPP, CitrineOS, charge station management, Addis EV, CSMS, charging infrastructure, OCPP 2.0.1, charging platform',
   
   openGraph: {
     type: 'website',
     title: {
-      default: 'AddisEV - Open Source EV Charging Platform',
-      template: 'AddisEV - Open Source EV Charging Platform | %s',
+      default: 'AddisEV -  Charging Platform',
+      template: 'AddisEV - Charging Platform | %s',
     },
-    description: 'Enterprise-grade open-source Charge Station Management System. Deploy scalable EV charging infrastructure with full OCPP support and CitrineOS integration.',
+    description: 'Enterprise-grade  Charge Station Management System. Deploy scalable EV charging infrastructure with full OCPP support and CitrineOS integration.',
   },
 };
 

@@ -18,13 +18,13 @@ export default function Footer() {
               />
               <div className="flex flex-col">
                 <p className="text-lg font-bold tracking-tight text-text-inverse">AddisEV</p>
-                <p className="text-sm text-text-secondary">Open-source EV charging platform</p>
+                <p className="text-sm text-text-secondary">Charging platform</p>
               </div>
             </div>
 
             <p className="mt-5 max-w-[420px] text-sm leading-relaxed text-text-secondary">
               Run and scale EV charging networks with open standards, flexible integrations, and a
-              modern operator experience—powered by open-source innovation.
+              modern operator experience—powered by Addis EV innovation.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -93,9 +93,9 @@ export default function Footer() {
                   <Link href="/#pricing" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     Pricing
                   </Link>
-                  <Link href="/contact" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
+                  {/* <Link href="/contact" className="text-sm text-text-secondary hover:text-text-inverse transition-colors">
                     Request demo
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
